@@ -4,10 +4,10 @@ ________
  
 Welcome to Advanced Data Journalism for Spring 2025. This repository will eventually hold all the scripts we work through in class as well as additional resources for your learning (many of which you can also find in Canvas). 
 
-Each class period I will commit the code that we work through.\
-\
-\
-\
+Each class period I will commit the code that we work through.
+
+-    Jan 29: [Introduction to sorting, filtering, and summarizing](https://eklucas.github.io/ADJ-S2025/scripts/intro-to-tidyverse.html)
+
 Because GitHub is not meant to hold large data files, you will find the data files we use in class on Canvas. 
 
 The [tipsheets](/tipsheets) folder has the following resources: 

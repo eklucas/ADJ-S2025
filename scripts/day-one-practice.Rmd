@@ -1,0 +1,22 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is our first notebook! Let's write some code. 
+
+```{r}
+
+fruit <- "apple"
+
+fruit
+
+number <- 5
+
+numbers <- c(5,6,7)
+
+sum(number)
+mean(numbers)
+```
+
+

@@ -1,0 +1,108 @@
+---
+title: "R Notebook"
+output:
+  html_document:
+    df_print: paged
+---
+
+First code chunk is always loading necessary libraries
+Libraries or packages are additions to baseR that you've already installed on your computer. 
+*If you haven't installed `tidyverse` for example, run this code in a code chunk:*\
+install.packages("tidyverse")
+
+```{r message=F}
+library(tidyverse)
+```
+
+Second code chunk loads the data you'll analyze in the script. It could be one or more files, but to start you'll just load the `mlb_2024.csv` file from Canvas (download to your data folder):
+```{r}
+# the function from tidyverse that reads a CSV file is read_csv(). It has one required argument, the location and name of the file you want to read:
+read_csv("data/mlb_2024.csv")
+
+# the code above will read the file and print the data to the console below the code chunk. To save the data to an environment variable that you can refer to later (which makes querying the data easier), use the assignment operator to save the table into a variable. Call it whatever you want, but here we'll just call it "data":
+data <- read_csv("data/mlb_2024.csv")
+
+```
+
+The `tidyverse` packages have many functions that are useful for data science, which has very similar goals to data journalism: importing, cleaning, analyzing and graphing data. We'll start with some basic functions that allow us to do fundamental operations: sorting, filtering, grouping and summarizing. 
+
+The tidyverse also contains the "pipe" character: `%>%` which ports your data variable into the first function, and then can port the results of that function into another function, and then another... use it to create a processing pipeline. 
+
+Practice sorting
+```{r}
+# the function to sort data is arrange(). This will sort your data by the Salary column, ascending (smallest number on top):
+data %>% arrange(Salary)
+
+# to switch to descending order, add the desc() function inside the arrang() function:
+data %>% arrange(desc(Salary))
+
+# sort by two variables: first by Team, then by Salary descending:
+data %>% arrange(Team, desc(Salary))
+```
+Practice filtering
+```{r}
+# the filter() function shows you a certain set of rows from your data that match criteria you set. For example, look at only rows where the Team column says "Cardinals". Note the double equals sign, which is required in filter(): 
+data %>% filter(Team == "Cardinals")
+
+# How many players play first base? (Since Team is a character column, we put the values in double quotes):
+data %>% filter(Position == "1B")
+
+# How much does the highest 1B player make? (Here we'll first filter and then sort): 
+data %>% filter(Position == "1B") %>% arrange(desc(Salary))
+
+# How many players make over 10M? (Numbers don't require double quotes):
+data %>% filter(Salary > 10000000)
+
+# How many RHPs make over $10M? (Combine criteria by using & if both must be true):
+data %>% filter(Position == "RHP" & Salary > 10000000)
+
+# How many players play for Missouri teams? (Combine criteria by using | if one OR the other needs to be true):
+data %>% filter(Team == "Cardinals" | Team == "Royals")
+```
+
+Practice summarising
+```{r}
+# the summarise() or summarize() function requires a summary function to summarize whatever data you feed it. There are many summary functions in baseR, including sum(), mean(), median(), and n().
+
+# n() counts the number of rows:
+data %>% summarise(players = n())
+
+# sum() adds up the values in a numbers column, such as Salary:
+data %>% summarise(total_salary = sum(Salary))
+
+# mean() calculates the average of values in a numbers column:
+data %>% summarise(avg_salary = mean(Salary))
+
+# Combine filter() and summarise() to get a summary of a subset of your data.
+# What's the average salary of the Cardinals?
+data %>% 
+  filter(Team == "Cardinals") %>% 
+  summarise(avg_salary = mean(Salary))
+
+# note for the code above that the order matters. You can't summarise your data and then filter it, because the summarise() function produces just one number under the column name "avg_salary", and "Team" no longer exists.
+```
+
+Practice grouping
+```{r}
+# use group_by() when you want to summarise() groups in your data rather than the entire dataset, or a single subset. For example:
+
+# Which team pays the highest average salary:
+data %>% 
+  group_by(Team) %>% 
+  summarise(avg_salary = mean(Salary)) %>% 
+  arrange(desc(avg_salary))
+
+# To create more than one summary, just add multiple summary functions inside summarise():
+data %>% 
+  group_by(Team) %>% 
+  summarise(avg_salary = mean(Salary), 
+            median_salary = median(Salary)) %>% 
+  arrange(desc(median_salary))
+```
+
+
+
+
+
+
+
