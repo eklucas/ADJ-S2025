@@ -1,0 +1,179 @@
+---
+title: "Sorting and filtering review"
+output:
+  html_document:
+    df_print: paged
+---
+
+Necessary packages:
+
+```{r}
+library(tidyverse)
+```
+
+Crime data from MSHP:
+
+```{r}
+data <- read_csv("data/como_crime.csv")
+```
+
+### Vetting data cleanliness
+
+`count()` is a useful function for looking at the unique values in a column to see if there are typos or inconsistencies. It gives you the unique values of whatever column you feed it and how many times those values appear (aka how many rows have each value):
+
+```{r}
+data %>% count(offense)
+```
+
+### Homework questions:
+
+Remember that sometimes my questions are vague, and require interpretation on your part. That's intentional; sometimes you'll have to make decisions about how to approach a question.
+
+**Q1: How many years of data are in this file?**
+
+For this question we need to keep in mind that sometimes data contains partial years; to figure out exactly how much data we have, consider the month as well as the year. Note that `count()` here is helpful in showing unique combinations of year and month_num:
+
+```{r}
+data %>% 
+  count(year,month_num)
+
+# the dataset starts in Jan 2021 and ends in Sept 2024 (a partial year).
+```
+
+**Q2: Which month of the data had the highest total crime numbers?** You could look at this one of two ways: either "month" means unique month (such as Jan 2021) or it means month overall (all the Januaries).
+
+Note also that to look at actual crime numbers we should use the aggregate value ("All Offense Types") in order to avoid duplication:
+
+```{r}
+# The single month with the most crimes:
+
+data %>% 
+  filter(offense == "All Offense Types") %>% 
+  arrange(desc(crimes))
+
+# May 2022.
+```
+
+```{r}
+# The overall month with the most crimes:
+
+data %>% 
+  filter(offense == "All Offense Types") %>% 
+  group_by(month_num) %>% 
+  summarise(total_crimes = sum(crimes)) %>% 
+  arrange(desc(total_crimes))
+
+# August.
+```
+
+**Q3: How many car thefts were committed overall?** This could just be "Motor Vehicle Theft" or it could include "Theft from Motor Vehicle" and "Theft of Motor Vehicle Parts/Accessories":
+
+```{r}
+# just motor vehicle theft:
+data %>% 
+  filter(offense == "Motor Vehicle Theft") %>% 
+  summarise(total_car_theft = sum(crimes))
+
+# option 1 for including all three categories:
+data %>% 
+  filter(offense == "Motor Vehicle Theft" | offense == "Theft From Motor Vehicle" | offense == "Theft of Motor Vehicle Parts/Accessories") %>% 
+  summarise(total_car_theft = sum(crimes))
+
+# option 2 (sql like) for including all three categories:
+data %>% 
+  filter(offense %in% c("Motor Vehicle Theft",
+                        "Theft From Motor Vehicle",
+                        "Theft of Motor Vehicle Parts/Accessories")) %>% 
+  summarise(total_car_theft = sum(crimes))
+
+```
+
+**Q4: Which months had the best and worst clearance rate for all Crimes Against Persons?** Again, this could mean unique month or overall month. And there are at least two ways to assess clearance rates for the latter: using averages, or calculating a new clearance rate.
+
+Also keep in mind that the month is when the crime was reported, not when it was cleared. So the relationship between month and clearances isn't exact; we can say: "of crimes committed in X month, X percent were cleared", *not* "police cleared X percent of crimes this month."
+
+```{r}
+# The unique month with the highest clearance rate: 
+data %>% 
+  filter(offense == "Crimes Against Person") %>% 
+  arrange(desc(rate))
+# May 2022
+
+# The unique month with the lowest clearance rate: 
+data %>% 
+  filter(offense == "Crimes Against Person") %>% 
+  arrange(rate)
+# October 2021
+
+
+# the highest average clearance rate for month overall:
+data %>% 
+  filter(offense == "Crimes Against Person") %>%
+  group_by(month) %>% 
+  summarise(avg_rate = mean(rate)) %>% 
+  arrange(desc(avg_rate))
+# May
+
+# the lowest average clearance rate for month overall:
+data %>% 
+  filter(offense == "Crimes Against Person") %>%
+  group_by(month) %>% 
+  summarise(avg_rate = mean(rate)) %>% 
+  arrange(avg_rate)
+# October
+
+# calculating a true clearance rate for overall month:
+data %>% 
+  filter(offense == "Crimes Against Person") %>% 
+  group_by(month) %>% 
+  summarise(crimes = sum(crimes), 
+            clearances = sum(clearances), 
+            new_rate = sum(clearances)/sum(crimes)) %>% 
+  arrange(desc(new_rate))
+# we get the same months, May and October (though the numbers are slightly different)
+```
+
+**Q5: Does crime appear to be going up or down in Columbia?** This can be a tricky one. You have to decide what period of time (the whole dataset? Just the last two years?) and by what unit (by year? by month?)
+
+Other things to consider:
+
+-   2024 is a partial year.
+-   Not all crimes are equal; compare "violent" crimes separately from "property" crimes:
+
+```{r}
+# Start with violent crimes: "Crimes Against Person"
+
+# compare years but only looking at Jan thru Sept to make it a fair comparison:
+data %>% 
+  filter(offense == "Crimes Against Person" & !month %in% c("December", "November", "October")) %>% 
+  group_by(year) %>% 
+  summarise(total_crimes = sum(crimes))
+
+# another way to do that:
+data %>% 
+  filter(offense == "Crimes Against Person" & month_num <= 9) %>% 
+  group_by(year) %>% 
+  summarise(total_crimes = sum(crimes))
+
+# Compare property crimes:
+data %>% 
+  filter(offense == "Crimes Against Property" & month_num <= 9) %>% 
+  group_by(year) %>% 
+  summarise(total_crimes = sum(crimes))
+
+# Compare murder alone:
+data %>% 
+  filter(offense == "Murder and Nonnegligent Manslaughter" & month_num <= 9) %>% 
+  group_by(year) %>% 
+  summarise(total_crimes = sum(crimes))
+```
+
+Sometimes it's annoying to have to remember to filter aggregate values in `offense` in or out, so separating the aggregate `offense` rows from the individual `offense` rows can be helpful. Create separate tables:
+
+```{r}
+aggregate_data <- data %>% 
+  filter(offense %in% c("All Offense Types", "Crimes Against Person", "Crimes Against Property", "Crimes Against Society"))
+
+granular_data <- data %>% 
+  filter(!offense %in% c("All Offense Types", "Crimes Against Person", "Crimes Against Property", "Crimes Against Society"))
+```

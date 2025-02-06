@@ -1,0 +1,1542 @@
+year,month,offense,crimes,clearances,rate,month_num
+2021,January,All Offense Types,733,205,27.97,1
+2021,January,Crimes Against Person,190,78,41.05,1
+2021,January,Kidnapping/Abduction,5,3,60,1
+2021,January,Rape,12,4,33.33,1
+2021,January,Sodomy,6,1,16.67,1
+2021,January,Sexual Assault With An Object,1,NA,NA,1
+2021,January,Fondling,5,1,20,1
+2021,January,Statutory Rape,1,NA,NA,1
+2021,January,Aggravated Assault,26,13,50,1
+2021,January,Simple Assault,123,52,42.28,1
+2021,January,Intimidation,11,4,36.36,1
+2021,January,Crimes Against Property,468,66,14.1,1
+2021,January,Arson,1,NA,NA,1
+2021,January,Burglary/Breaking & Entering,36,9,25,1
+2021,January,Counterfeiting/Forgery,8,3,37.5,1
+2021,January,Destruction/Damage/Vandalism of Property,86,11,12.79,1
+2021,January,Embezzlement,3,1,33.33,1
+2021,January,False Pretenses/Swindle/Confidence Game,16,NA,NA,1
+2021,January,Credit Card/Automated Teller Machine Fraud,17,2,11.76,1
+2021,January,Wire Fraud,3,NA,NA,1
+2021,January,Identity Theft,3,NA,NA,1
+2021,January,Robbery,3,1,33.33,1
+2021,January,Shoplifting,33,9,27.27,1
+2021,January,Theft From Building,42,4,9.52,1
+2021,January,Theft From Coin Operated Machine or Device,1,NA,NA,1
+2021,January,Theft From Motor Vehicle,93,5,5.38,1
+2021,January,Theft of Motor Vehicle Parts/Accessories,33,1,3.03,1
+2021,January,All Other Larceny,41,7,17.07,1
+2021,January,Motor Vehicle Theft,46,10,21.74,1
+2021,January,Stolen Property Offenses,3,3,100,1
+2021,January,Crimes Against Society,75,61,81.33,1
+2021,January,Drug/Narcotic Violations,43,36,83.72,1
+2021,January,Drug Equipment Violations,19,16,84.21,1
+2021,January,Pornography/Obscene Material,3,NA,NA,1
+2021,January,Weapon Law Violations,10,9,90,1
+2021,February,All Offense Types,535,185,34.58,2
+2021,February,Crimes Against Person,176,65,36.93,2
+2021,February,Murder and Nonnegligent Manslaughter,1,1,100,2
+2021,February,Kidnapping/Abduction,2,NA,NA,2
+2021,February,Rape,4,NA,NA,2
+2021,February,Sodomy,6,NA,NA,2
+2021,February,Fondling,7,2,28.57,2
+2021,February,Statutory Rape,1,NA,NA,2
+2021,February,Aggravated Assault,25,14,56,2
+2021,February,Simple Assault,116,43,37.07,2
+2021,February,Intimidation,14,5,35.71,2
+2021,February,Crimes Against Property,286,55,19.23,2
+2021,February,Arson,2,2,100,2
+2021,February,Burglary/Breaking & Entering,14,4,28.57,2
+2021,February,Counterfeiting/Forgery,3,1,33.33,2
+2021,February,Destruction/Damage/Vandalism of Property,64,13,20.31,2
+2021,February,Embezzlement,2,1,50,2
+2021,February,False Pretenses/Swindle/Confidence Game,19,2,10.53,2
+2021,February,Credit Card/Automated Teller Machine Fraud,14,2,14.29,2
+2021,February,Impersonation,1,1,100,2
+2021,February,Wire Fraud,2,NA,NA,2
+2021,February,Identity Theft,3,NA,NA,2
+2021,February,Robbery,6,3,50,2
+2021,February,Purse-snatching,1,NA,NA,2
+2021,February,Shoplifting,27,5,18.52,2
+2021,February,Theft From Building,17,6,35.29,2
+2021,February,Theft From Motor Vehicle,26,2,7.69,2
+2021,February,Theft of Motor Vehicle Parts/Accessories,20,1,5,2
+2021,February,All Other Larceny,37,4,10.81,2
+2021,February,Motor Vehicle Theft,26,7,26.92,2
+2021,February,Stolen Property Offenses,2,1,50,2
+2021,February,Crimes Against Society,73,65,89.04,2
+2021,February,Drug/Narcotic Violations,40,39,97.5,2
+2021,February,Drug Equipment Violations,15,15,100,2
+2021,February,Pornography/Obscene Material,3,NA,NA,2
+2021,February,Weapon Law Violations,15,11,73.33,2
+2021,March,All Offense Types,663,248,37.41,3
+2021,March,Crimes Against Person,231,95,41.13,3
+2021,March,Murder and Nonnegligent Manslaughter,2,1,50,3
+2021,March,Kidnapping/Abduction,6,5,83.33,3
+2021,March,Rape,13,1,7.69,3
+2021,March,Sodomy,7,1,14.29,3
+2021,March,Sexual Assault With An Object,1,NA,NA,3
+2021,March,Fondling,6,NA,NA,3
+2021,March,Statutory Rape,2,NA,NA,3
+2021,March,Aggravated Assault,48,34,70.83,3
+2021,March,Simple Assault,139,50,35.97,3
+2021,March,Intimidation,7,3,42.86,3
+2021,March,Crimes Against Property,326,59,18.1,3
+2021,March,Arson,1,1,100,3
+2021,March,Burglary/Breaking & Entering,24,5,20.83,3
+2021,March,Counterfeiting/Forgery,4,NA,NA,3
+2021,March,Destruction/Damage/Vandalism of Property,62,15,24.19,3
+2021,March,False Pretenses/Swindle/Confidence Game,25,2,8,3
+2021,March,Credit Card/Automated Teller Machine Fraud,12,3,25,3
+2021,March,Impersonation,1,1,100,3
+2021,March,Wire Fraud,1,NA,NA,3
+2021,March,Identity Theft,7,NA,NA,3
+2021,March,Robbery,5,2,40,3
+2021,March,Shoplifting,40,16,40,3
+2021,March,Theft From Building,21,3,14.29,3
+2021,March,Theft From Coin Operated Machine or Device,1,NA,NA,3
+2021,March,Theft From Motor Vehicle,27,2,7.41,3
+2021,March,Theft of Motor Vehicle Parts/Accessories,29,NA,NA,3
+2021,March,All Other Larceny,47,5,10.64,3
+2021,March,Motor Vehicle Theft,18,3,16.67,3
+2021,March,Stolen Property Offenses,1,1,100,3
+2021,March,Crimes Against Society,106,94,88.68,3
+2021,March,Drug/Narcotic Violations,59,54,91.53,3
+2021,March,Drug Equipment Violations,30,28,93.33,3
+2021,March,Pornography/Obscene Material,2,NA,NA,3
+2021,March,Weapon Law Violations,15,12,80,3
+2021,April,All Offense Types,589,185,31.41,4
+2021,April,Crimes Against Person,215,76,35.35,4
+2021,April,Murder and Nonnegligent Manslaughter,1,1,100,4
+2021,April,Kidnapping/Abduction,1,1,100,4
+2021,April,Rape,6,NA,NA,4
+2021,April,Sodomy,6,NA,NA,4
+2021,April,Fondling,5,1,20,4
+2021,April,Statutory Rape,1,NA,NA,4
+2021,April,Aggravated Assault,39,12,30.77,4
+2021,April,Simple Assault,146,59,40.41,4
+2021,April,Intimidation,10,2,20,4
+2021,April,Crimes Against Property,296,42,14.19,4
+2021,April,Arson,2,2,100,4
+2021,April,Burglary/Breaking & Entering,22,8,36.36,4
+2021,April,Counterfeiting/Forgery,1,1,100,4
+2021,April,Destruction/Damage/Vandalism of Property,72,15,20.83,4
+2021,April,Embezzlement,3,1,33.33,4
+2021,April,False Pretenses/Swindle/Confidence Game,17,1,5.88,4
+2021,April,Credit Card/Automated Teller Machine Fraud,14,1,7.14,4
+2021,April,Impersonation,1,NA,NA,4
+2021,April,Identity Theft,2,NA,NA,4
+2021,April,Robbery,6,3,50,4
+2021,April,Pocket-picking,1,NA,NA,4
+2021,April,Shoplifting,22,3,13.64,4
+2021,April,Theft From Building,22,1,4.55,4
+2021,April,Theft From Coin Operated Machine or Device,2,NA,NA,4
+2021,April,Theft From Motor Vehicle,24,1,4.17,4
+2021,April,Theft of Motor Vehicle Parts/Accessories,26,1,3.85,4
+2021,April,All Other Larceny,37,2,5.41,4
+2021,April,Motor Vehicle Theft,22,2,9.09,4
+2021,April,Crimes Against Society,78,67,85.9,4
+2021,April,Drug/Narcotic Violations,47,40,85.11,4
+2021,April,Drug Equipment Violations,22,20,90.91,4
+2021,April,Weapon Law Violations,9,7,77.78,4
+2021,May,All Offense Types,658,201,30.55,5
+2021,May,Crimes Against Person,246,84,34.15,5
+2021,May,Murder and Nonnegligent Manslaughter,1,NA,NA,5
+2021,May,Kidnapping/Abduction,4,3,75,5
+2021,May,Rape,8,NA,NA,5
+2021,May,Sodomy,5,1,20,5
+2021,May,Fondling,5,1,20,5
+2021,May,Aggravated Assault,35,14,40,5
+2021,May,Simple Assault,166,60,36.14,5
+2021,May,Intimidation,13,5,38.46,5
+2021,May,"Human Trafficking, Commercial Sex Acts",9,NA,NA,5
+2021,May,Crimes Against Property,319,38,11.91,5
+2021,May,Arson,2,NA,NA,5
+2021,May,Burglary/Breaking & Entering,22,5,22.73,5
+2021,May,Counterfeiting/Forgery,6,NA,NA,5
+2021,May,Destruction/Damage/Vandalism of Property,76,17,22.37,5
+2021,May,Embezzlement,5,1,20,5
+2021,May,False Pretenses/Swindle/Confidence Game,10,NA,NA,5
+2021,May,Credit Card/Automated Teller Machine Fraud,19,NA,NA,5
+2021,May,Wire Fraud,1,NA,NA,5
+2021,May,Identity Theft,3,NA,NA,5
+2021,May,Robbery,4,NA,NA,5
+2021,May,Shoplifting,22,3,13.64,5
+2021,May,Theft From Building,29,3,10.34,5
+2021,May,Theft From Motor Vehicle,40,2,5,5
+2021,May,Theft of Motor Vehicle Parts/Accessories,15,1,6.67,5
+2021,May,All Other Larceny,34,2,5.88,5
+2021,May,Motor Vehicle Theft,31,4,12.9,5
+2021,May,Crimes Against Society,93,79,84.95,5
+2021,May,Drug/Narcotic Violations,47,44,93.62,5
+2021,May,Drug Equipment Violations,28,25,89.29,5
+2021,May,Weapon Law Violations,18,10,55.56,5
+2021,June,All Offense Types,658,177,26.9,6
+2021,June,Crimes Against Person,218,95,43.58,6
+2021,June,Kidnapping/Abduction,6,5,83.33,6
+2021,June,Rape,7,NA,NA,6
+2021,June,Sodomy,4,NA,NA,6
+2021,June,Sexual Assault With An Object,2,NA,NA,6
+2021,June,Fondling,5,NA,NA,6
+2021,June,Statutory Rape,1,NA,NA,6
+2021,June,Aggravated Assault,34,20,58.82,6
+2021,June,Simple Assault,144,65,45.14,6
+2021,June,Intimidation,15,5,33.33,6
+2021,June,Crimes Against Property,391,46,11.76,6
+2021,June,Arson,1,NA,NA,6
+2021,June,Burglary/Breaking & Entering,23,7,30.43,6
+2021,June,Counterfeiting/Forgery,3,1,33.33,6
+2021,June,Destruction/Damage/Vandalism of Property,83,18,21.69,6
+2021,June,Embezzlement,1,NA,NA,6
+2021,June,Extortion/Blackmail,1,NA,NA,6
+2021,June,False Pretenses/Swindle/Confidence Game,16,NA,NA,6
+2021,June,Credit Card/Automated Teller Machine Fraud,22,NA,NA,6
+2021,June,Wire Fraud,1,NA,NA,6
+2021,June,Identity Theft,3,NA,NA,6
+2021,June,Robbery,2,NA,NA,6
+2021,June,Pocket-picking,1,NA,NA,6
+2021,June,Shoplifting,32,7,21.88,6
+2021,June,Theft From Building,24,4,16.67,6
+2021,June,Theft From Motor Vehicle,65,1,1.54,6
+2021,June,Theft of Motor Vehicle Parts/Accessories,25,NA,NA,6
+2021,June,All Other Larceny,58,5,8.62,6
+2021,June,Motor Vehicle Theft,30,3,10,6
+2021,June,Crimes Against Society,49,36,73.47,6
+2021,June,Drug/Narcotic Violations,25,21,84,6
+2021,June,Drug Equipment Violations,11,9,81.82,6
+2021,June,Weapon Law Violations,13,6,46.15,6
+2021,July,All Offense Types,785,219,27.9,7
+2021,July,Crimes Against Person,223,100,44.84,7
+2021,July,Kidnapping/Abduction,2,2,100,7
+2021,July,Rape,10,NA,NA,7
+2021,July,Sodomy,6,3,50,7
+2021,July,Fondling,6,NA,NA,7
+2021,July,Aggravated Assault,38,27,71.05,7
+2021,July,Simple Assault,149,62,41.61,7
+2021,July,Intimidation,12,6,50,7
+2021,July,Crimes Against Property,496,62,12.5,7
+2021,July,Arson,1,NA,NA,7
+2021,July,Burglary/Breaking & Entering,35,8,22.86,7
+2021,July,Counterfeiting/Forgery,10,1,10,7
+2021,July,Destruction/Damage/Vandalism of Property,80,16,20,7
+2021,July,Embezzlement,4,2,50,7
+2021,July,False Pretenses/Swindle/Confidence Game,21,NA,NA,7
+2021,July,Credit Card/Automated Teller Machine Fraud,30,3,10,7
+2021,July,Wire Fraud,1,NA,NA,7
+2021,July,Identity Theft,7,NA,NA,7
+2021,July,Hacking/Computer Invasion,1,NA,NA,7
+2021,July,Robbery,4,1,25,7
+2021,July,Pocket-picking,2,NA,NA,7
+2021,July,Shoplifting,27,7,25.93,7
+2021,July,Theft From Building,41,7,17.07,7
+2021,July,Theft From Motor Vehicle,91,6,6.59,7
+2021,July,Theft of Motor Vehicle Parts/Accessories,37,NA,NA,7
+2021,July,All Other Larceny,63,4,6.35,7
+2021,July,Motor Vehicle Theft,41,7,17.07,7
+2021,July,Crimes Against Society,66,57,86.36,7
+2021,July,Drug/Narcotic Violations,38,34,89.47,7
+2021,July,Drug Equipment Violations,17,17,100,7
+2021,July,Pornography/Obscene Material,1,NA,NA,7
+2021,July,Weapon Law Violations,10,6,60,7
+2021,August,All Offense Types,810,207,25.56,8
+2021,August,Crimes Against Person,210,77,36.67,8
+2021,August,Kidnapping/Abduction,10,8,80,8
+2021,August,Rape,12,1,8.33,8
+2021,August,Sodomy,3,NA,NA,8
+2021,August,Sexual Assault With An Object,1,NA,NA,8
+2021,August,Fondling,12,NA,NA,8
+2021,August,Aggravated Assault,36,19,52.78,8
+2021,August,Simple Assault,128,45,35.16,8
+2021,August,Intimidation,8,4,50,8
+2021,August,Crimes Against Property,519,67,12.91,8
+2021,August,Burglary/Breaking & Entering,41,6,14.63,8
+2021,August,Counterfeiting/Forgery,8,2,25,8
+2021,August,Destruction/Damage/Vandalism of Property,102,14,13.73,8
+2021,August,Embezzlement,6,3,50,8
+2021,August,Extortion/Blackmail,1,NA,NA,8
+2021,August,False Pretenses/Swindle/Confidence Game,16,1,6.25,8
+2021,August,Credit Card/Automated Teller Machine Fraud,25,3,12,8
+2021,August,Identity Theft,2,NA,NA,8
+2021,August,Robbery,4,2,50,8
+2021,August,Shoplifting,37,12,32.43,8
+2021,August,Theft From Building,41,3,7.32,8
+2021,August,Theft From Coin Operated Machine or Device,2,NA,NA,8
+2021,August,Theft From Motor Vehicle,101,6,5.94,8
+2021,August,Theft of Motor Vehicle Parts/Accessories,31,2,6.45,8
+2021,August,All Other Larceny,59,6,10.17,8
+2021,August,Motor Vehicle Theft,43,7,16.28,8
+2021,August,Crimes Against Society,81,63,77.78,8
+2021,August,Drug/Narcotic Violations,51,41,80.39,8
+2021,August,Drug Equipment Violations,19,17,89.47,8
+2021,August,Weapon Law Violations,11,5,45.45,8
+2021,September,All Offense Types,806,234,29.03,9
+2021,September,Crimes Against Person,259,106,40.93,9
+2021,September,Kidnapping/Abduction,8,5,62.5,9
+2021,September,Rape,4,NA,NA,9
+2021,September,Sodomy,4,NA,NA,9
+2021,September,Sexual Assault With An Object,1,NA,NA,9
+2021,September,Fondling,6,NA,NA,9
+2021,September,Statutory Rape,1,NA,NA,9
+2021,September,Aggravated Assault,39,19,48.72,9
+2021,September,Simple Assault,179,76,42.46,9
+2021,September,Intimidation,17,6,35.29,9
+2021,September,Crimes Against Property,470,64,13.62,9
+2021,September,Arson,1,1,100,9
+2021,September,Burglary/Breaking & Entering,47,7,14.89,9
+2021,September,Counterfeiting/Forgery,10,1,10,9
+2021,September,Destruction/Damage/Vandalism of Property,89,20,22.47,9
+2021,September,Embezzlement,1,1,100,9
+2021,September,Extortion/Blackmail,1,NA,NA,9
+2021,September,False Pretenses/Swindle/Confidence Game,17,3,17.65,9
+2021,September,Credit Card/Automated Teller Machine Fraud,28,1,3.57,9
+2021,September,Wire Fraud,1,NA,NA,9
+2021,September,Identity Theft,5,NA,NA,9
+2021,September,Robbery,4,NA,NA,9
+2021,September,Pocket-picking,1,NA,NA,9
+2021,September,Purse-snatching,1,1,100,9
+2021,September,Shoplifting,32,9,28.13,9
+2021,September,Theft From Building,33,4,12.12,9
+2021,September,Theft From Motor Vehicle,71,6,8.45,9
+2021,September,Theft of Motor Vehicle Parts/Accessories,51,1,1.96,9
+2021,September,All Other Larceny,49,4,8.16,9
+2021,September,Motor Vehicle Theft,27,4,14.81,9
+2021,September,Stolen Property Offenses,1,1,100,9
+2021,September,Crimes Against Society,77,64,83.12,9
+2021,September,Drug/Narcotic Violations,40,37,92.5,9
+2021,September,Drug Equipment Violations,17,16,94.12,9
+2021,September,Pornography/Obscene Material,2,NA,NA,9
+2021,September,Weapon Law Violations,18,11,61.11,9
+2021,October,All Offense Types,864,208,24.07,10
+2021,October,Crimes Against Person,251,74,29.48,10
+2021,October,Murder and Nonnegligent Manslaughter,1,NA,NA,10
+2021,October,Kidnapping/Abduction,8,5,62.5,10
+2021,October,Rape,6,1,16.67,10
+2021,October,Sodomy,4,1,25,10
+2021,October,Fondling,3,NA,NA,10
+2021,October,Statutory Rape,1,NA,NA,10
+2021,October,Aggravated Assault,49,8,16.33,10
+2021,October,Simple Assault,166,57,34.34,10
+2021,October,Intimidation,13,2,15.38,10
+2021,October,Crimes Against Property,528,60,11.36,10
+2021,October,Arson,3,1,33.33,10
+2021,October,Burglary/Breaking & Entering,41,6,14.63,10
+2021,October,Counterfeiting/Forgery,8,2,25,10
+2021,October,Destruction/Damage/Vandalism of Property,96,13,13.54,10
+2021,October,Embezzlement,8,3,37.5,10
+2021,October,False Pretenses/Swindle/Confidence Game,20,NA,NA,10
+2021,October,Credit Card/Automated Teller Machine Fraud,30,1,3.33,10
+2021,October,Wire Fraud,3,NA,NA,10
+2021,October,Identity Theft,2,NA,NA,10
+2021,October,Robbery,6,1,16.67,10
+2021,October,Pocket-picking,1,NA,NA,10
+2021,October,Shoplifting,39,15,38.46,10
+2021,October,Theft From Building,31,4,12.9,10
+2021,October,Theft From Motor Vehicle,96,1,1.04,10
+2021,October,Theft of Motor Vehicle Parts/Accessories,33,NA,NA,10
+2021,October,All Other Larceny,60,6,10,10
+2021,October,Motor Vehicle Theft,51,7,13.73,10
+2021,October,Crimes Against Society,85,74,87.06,10
+2021,October,Drug/Narcotic Violations,42,38,90.48,10
+2021,October,Drug Equipment Violations,26,26,100,10
+2021,October,Pornography/Obscene Material,1,1,100,10
+2021,October,Weapon Law Violations,13,8,61.54,10
+2021,October,Animal Cruelty,3,1,33.33,10
+2021,November,All Offense Types,723,186,25.73,11
+2021,November,Crimes Against Person,233,84,36.05,11
+2021,November,Kidnapping/Abduction,4,4,100,11
+2021,November,Rape,9,NA,NA,11
+2021,November,Sodomy,5,1,20,11
+2021,November,Fondling,4,NA,NA,11
+2021,November,Aggravated Assault,41,20,48.78,11
+2021,November,Simple Assault,152,52,34.21,11
+2021,November,Intimidation,17,7,41.18,11
+2021,November,"Human Trafficking, Commercial Sex Acts",1,NA,NA,11
+2021,November,Crimes Against Property,428,54,12.62,11
+2021,November,Burglary/Breaking & Entering,25,4,16,11
+2021,November,Counterfeiting/Forgery,7,1,14.29,11
+2021,November,Destruction/Damage/Vandalism of Property,72,15,20.83,11
+2021,November,Embezzlement,6,2,33.33,11
+2021,November,False Pretenses/Swindle/Confidence Game,14,NA,NA,11
+2021,November,Credit Card/Automated Teller Machine Fraud,29,1,3.45,11
+2021,November,Wire Fraud,4,NA,NA,11
+2021,November,Identity Theft,2,1,50,11
+2021,November,Robbery,5,1,20,11
+2021,November,Purse-snatching,1,NA,NA,11
+2021,November,Shoplifting,31,9,29.03,11
+2021,November,Theft From Building,31,5,16.13,11
+2021,November,Theft From Coin Operated Machine or Device,1,1,100,11
+2021,November,Theft From Motor Vehicle,67,4,5.97,11
+2021,November,Theft of Motor Vehicle Parts/Accessories,41,NA,NA,11
+2021,November,All Other Larceny,61,6,9.84,11
+2021,November,Motor Vehicle Theft,31,4,12.9,11
+2021,November,Crimes Against Society,62,48,77.42,11
+2021,November,Drug/Narcotic Violations,28,26,92.86,11
+2021,November,Drug Equipment Violations,16,15,93.75,11
+2021,November,Pornography/Obscene Material,2,1,50,11
+2021,November,Weapon Law Violations,16,6,37.5,11
+2021,December,All Offense Types,634,165,26.03,12
+2021,December,Crimes Against Person,177,57,32.2,12
+2021,December,Kidnapping/Abduction,7,4,57.14,12
+2021,December,Rape,6,1,16.67,12
+2021,December,Sodomy,2,NA,NA,12
+2021,December,Fondling,9,NA,NA,12
+2021,December,Aggravated Assault,24,16,66.67,12
+2021,December,Simple Assault,124,35,28.23,12
+2021,December,Intimidation,5,1,20,12
+2021,December,Crimes Against Property,388,50,12.89,12
+2021,December,Arson,1,NA,NA,12
+2021,December,Burglary/Breaking & Entering,37,6,16.22,12
+2021,December,Counterfeiting/Forgery,6,NA,NA,12
+2021,December,Destruction/Damage/Vandalism of Property,72,13,18.06,12
+2021,December,Embezzlement,3,1,33.33,12
+2021,December,False Pretenses/Swindle/Confidence Game,14,2,14.29,12
+2021,December,Credit Card/Automated Teller Machine Fraud,32,1,3.13,12
+2021,December,Wire Fraud,1,NA,NA,12
+2021,December,Identity Theft,3,NA,NA,12
+2021,December,Robbery,2,1,50,12
+2021,December,Purse-snatching,1,NA,NA,12
+2021,December,Shoplifting,36,10,27.78,12
+2021,December,Theft From Building,35,3,8.57,12
+2021,December,Theft From Motor Vehicle,54,3,5.56,12
+2021,December,Theft of Motor Vehicle Parts/Accessories,25,NA,NA,12
+2021,December,All Other Larceny,45,6,13.33,12
+2021,December,Motor Vehicle Theft,21,4,19.05,12
+2021,December,Crimes Against Society,69,58,84.06,12
+2021,December,Drug/Narcotic Violations,36,32,88.89,12
+2021,December,Drug Equipment Violations,23,21,91.3,12
+2021,December,Weapon Law Violations,10,5,50,12
+2022,January,All Offense Types,586,170,29.01,1
+2022,January,Crimes Against Person,202,89,44.06,1
+2022,January,Murder and Nonnegligent Manslaughter,1,1,100,1
+2022,January,Kidnapping/Abduction,3,3,100,1
+2022,January,Rape,5,NA,NA,1
+2022,January,Sodomy,4,3,75,1
+2022,January,Fondling,6,NA,NA,1
+2022,January,Statutory Rape,2,NA,NA,1
+2022,January,Aggravated Assault,24,9,37.5,1
+2022,January,Simple Assault,144,71,49.31,1
+2022,January,Intimidation,13,2,15.38,1
+2022,January,Crimes Against Property,341,49,14.37,1
+2022,January,Arson,4,1,25,1
+2022,January,Burglary/Breaking & Entering,31,4,12.9,1
+2022,January,Counterfeiting/Forgery,5,1,20,1
+2022,January,Destruction/Damage/Vandalism of Property,61,15,24.59,1
+2022,January,Embezzlement,2,1,50,1
+2022,January,False Pretenses/Swindle/Confidence Game,17,NA,NA,1
+2022,January,Credit Card/Automated Teller Machine Fraud,23,2,8.7,1
+2022,January,Impersonation,2,1,50,1
+2022,January,Wire Fraud,2,NA,NA,1
+2022,January,Identity Theft,1,NA,NA,1
+2022,January,Robbery,4,3,75,1
+2022,January,Shoplifting,33,9,27.27,1
+2022,January,Theft From Building,25,5,20,1
+2022,January,Theft From Motor Vehicle,36,2,5.56,1
+2022,January,Theft of Motor Vehicle Parts/Accessories,22,NA,NA,1
+2022,January,All Other Larceny,44,3,6.82,1
+2022,January,Motor Vehicle Theft,28,1,3.57,1
+2022,January,Stolen Property Offenses,1,1,100,1
+2022,January,Crimes Against Society,43,32,74.42,1
+2022,January,Drug/Narcotic Violations,24,20,83.33,1
+2022,January,Drug Equipment Violations,10,7,70,1
+2022,January,Weapon Law Violations,9,5,55.56,1
+2022,February,All Offense Types,557,189,33.93,2
+2022,February,Crimes Against Person,206,82,39.81,2
+2022,February,Murder and Nonnegligent Manslaughter,1,1,100,2
+2022,February,Kidnapping/Abduction,6,5,83.33,2
+2022,February,Rape,6,NA,NA,2
+2022,February,Sodomy,1,NA,NA,2
+2022,February,Sexual Assault With An Object,1,NA,NA,2
+2022,February,Fondling,10,NA,NA,2
+2022,February,Aggravated Assault,37,34,91.89,2
+2022,February,Simple Assault,130,40,30.77,2
+2022,February,Intimidation,14,2,14.29,2
+2022,February,Crimes Against Property,279,41,14.7,2
+2022,February,Arson,1,NA,NA,2
+2022,February,Burglary/Breaking & Entering,17,2,11.76,2
+2022,February,Counterfeiting/Forgery,10,2,20,2
+2022,February,Destruction/Damage/Vandalism of Property,42,14,33.33,2
+2022,February,Embezzlement,2,1,50,2
+2022,February,False Pretenses/Swindle/Confidence Game,13,1,7.69,2
+2022,February,Credit Card/Automated Teller Machine Fraud,9,2,22.22,2
+2022,February,Wire Fraud,3,NA,NA,2
+2022,February,Identity Theft,3,NA,NA,2
+2022,February,Robbery,5,NA,NA,2
+2022,February,Purse-snatching,1,1,100,2
+2022,February,Shoplifting,26,5,19.23,2
+2022,February,Theft From Building,25,2,8,2
+2022,February,Theft From Coin Operated Machine or Device,1,NA,NA,2
+2022,February,Theft From Motor Vehicle,39,4,10.26,2
+2022,February,Theft of Motor Vehicle Parts/Accessories,25,NA,NA,2
+2022,February,All Other Larceny,28,1,3.57,2
+2022,February,Motor Vehicle Theft,29,6,20.69,2
+2022,February,Crimes Against Society,72,66,91.67,2
+2022,February,Drug/Narcotic Violations,33,30,90.91,2
+2022,February,Drug Equipment Violations,24,24,100,2
+2022,February,Pornography/Obscene Material,1,NA,NA,2
+2022,February,Weapon Law Violations,13,11,84.62,2
+2022,February,Animal Cruelty,1,1,100,2
+2022,March,All Offense Types,771,260,33.72,3
+2022,March,Crimes Against Person,236,107,45.34,3
+2022,March,Murder and Nonnegligent Manslaughter,1,1,100,3
+2022,March,Kidnapping/Abduction,6,6,100,3
+2022,March,Rape,5,1,20,3
+2022,March,Sodomy,1,NA,NA,3
+2022,March,Fondling,10,NA,NA,3
+2022,March,Statutory Rape,2,NA,NA,3
+2022,March,Aggravated Assault,39,23,58.97,3
+2022,March,Simple Assault,163,69,42.33,3
+2022,March,Intimidation,9,7,77.78,3
+2022,March,Crimes Against Property,421,57,13.54,3
+2022,March,Arson,1,1,100,3
+2022,March,Burglary/Breaking & Entering,35,9,25.71,3
+2022,March,Counterfeiting/Forgery,10,2,20,3
+2022,March,Destruction/Damage/Vandalism of Property,61,10,16.39,3
+2022,March,Embezzlement,3,NA,NA,3
+2022,March,Extortion/Blackmail,1,NA,NA,3
+2022,March,False Pretenses/Swindle/Confidence Game,22,2,9.09,3
+2022,March,Credit Card/Automated Teller Machine Fraud,20,3,15,3
+2022,March,Impersonation,1,NA,NA,3
+2022,March,Wire Fraud,1,NA,NA,3
+2022,March,Identity Theft,9,NA,NA,3
+2022,March,Robbery,3,1,33.33,3
+2022,March,Shoplifting,35,7,20,3
+2022,March,Theft From Building,50,8,16,3
+2022,March,Theft From Motor Vehicle,77,3,3.9,3
+2022,March,Theft of Motor Vehicle Parts/Accessories,22,1,4.55,3
+2022,March,All Other Larceny,35,5,14.29,3
+2022,March,Motor Vehicle Theft,34,4,11.76,3
+2022,March,Stolen Property Offenses,1,1,100,3
+2022,March,Crimes Against Society,114,96,84.21,3
+2022,March,Drug/Narcotic Violations,63,55,87.3,3
+2022,March,Drug Equipment Violations,31,29,93.55,3
+2022,March,Pornography/Obscene Material,2,1,50,3
+2022,March,Prostitution,1,NA,NA,3
+2022,March,Weapon Law Violations,15,11,73.33,3
+2022,March,Animal Cruelty,2,NA,NA,3
+2022,April,All Offense Types,695,207,29.78,4
+2022,April,Crimes Against Person,205,75,36.59,4
+2022,April,Kidnapping/Abduction,4,4,100,4
+2022,April,Rape,5,NA,NA,4
+2022,April,Fondling,7,2,28.57,4
+2022,April,Statutory Rape,3,NA,NA,4
+2022,April,Aggravated Assault,57,23,40.35,4
+2022,April,Simple Assault,122,46,37.7,4
+2022,April,Intimidation,7,NA,NA,4
+2022,April,Crimes Against Property,402,65,16.17,4
+2022,April,Arson,2,NA,NA,4
+2022,April,Burglary/Breaking & Entering,24,3,12.5,4
+2022,April,Counterfeiting/Forgery,11,5,45.45,4
+2022,April,Destruction/Damage/Vandalism of Property,64,12,18.75,4
+2022,April,False Pretenses/Swindle/Confidence Game,22,4,18.18,4
+2022,April,Credit Card/Automated Teller Machine Fraud,18,1,5.56,4
+2022,April,Wire Fraud,5,NA,NA,4
+2022,April,Identity Theft,5,NA,NA,4
+2022,April,Robbery,4,2,50,4
+2022,April,Shoplifting,39,14,35.9,4
+2022,April,Theft From Building,32,3,9.38,4
+2022,April,Theft From Motor Vehicle,50,1,2,4
+2022,April,Theft of Motor Vehicle Parts/Accessories,38,2,5.26,4
+2022,April,All Other Larceny,58,10,17.24,4
+2022,April,Motor Vehicle Theft,30,8,26.67,4
+2022,April,Crimes Against Society,88,67,76.14,4
+2022,April,Drug/Narcotic Violations,43,36,83.72,4
+2022,April,Drug Equipment Violations,25,22,88,4
+2022,April,Pornography/Obscene Material,3,1,33.33,4
+2022,April,Weapon Law Violations,17,8,47.06,4
+2022,May,All Offense Types,916,346,37.77,5
+2022,May,Crimes Against Person,333,193,57.96,5
+2022,May,Murder and Nonnegligent Manslaughter,1,1,100,5
+2022,May,Kidnapping/Abduction,3,2,66.67,5
+2022,May,Rape,6,1,16.67,5
+2022,May,Fondling,8,1,12.5,5
+2022,May,Statutory Rape,2,NA,NA,5
+2022,May,Aggravated Assault,36,21,58.33,5
+2022,May,Simple Assault,161,65,40.37,5
+2022,May,Intimidation,116,102,87.93,5
+2022,May,Crimes Against Property,494,84,17,5
+2022,May,Arson,2,1,50,5
+2022,May,Burglary/Breaking & Entering,41,6,14.63,5
+2022,May,Counterfeiting/Forgery,14,6,42.86,5
+2022,May,Destruction/Damage/Vandalism of Property,102,21,20.59,5
+2022,May,Extortion/Blackmail,2,NA,NA,5
+2022,May,False Pretenses/Swindle/Confidence Game,19,1,5.26,5
+2022,May,Credit Card/Automated Teller Machine Fraud,17,3,17.65,5
+2022,May,Wire Fraud,5,NA,NA,5
+2022,May,Identity Theft,6,1,16.67,5
+2022,May,Hacking/Computer Invasion,1,NA,NA,5
+2022,May,Robbery,7,NA,NA,5
+2022,May,Pocket-picking,1,NA,NA,5
+2022,May,Shoplifting,41,12,29.27,5
+2022,May,Theft From Building,33,3,9.09,5
+2022,May,Theft From Motor Vehicle,68,11,16.18,5
+2022,May,Theft of Motor Vehicle Parts/Accessories,20,1,5,5
+2022,May,All Other Larceny,61,6,9.84,5
+2022,May,Motor Vehicle Theft,52,11,21.15,5
+2022,May,Stolen Property Offenses,2,1,50,5
+2022,May,Crimes Against Society,89,69,77.53,5
+2022,May,Drug/Narcotic Violations,50,41,82,5
+2022,May,Drug Equipment Violations,27,22,81.48,5
+2022,May,Pornography/Obscene Material,4,NA,NA,5
+2022,May,Prostitution,1,1,100,5
+2022,May,Weapon Law Violations,7,5,71.43,5
+2022,June,All Offense Types,777,241,31.02,6
+2022,June,Crimes Against Person,223,88,39.46,6
+2022,June,Kidnapping/Abduction,4,2,50,6
+2022,June,Rape,4,NA,NA,6
+2022,June,Sodomy,5,1,20,6
+2022,June,Fondling,5,NA,NA,6
+2022,June,Aggravated Assault,28,14,50,6
+2022,June,Simple Assault,169,66,39.05,6
+2022,June,Intimidation,8,5,62.5,6
+2022,June,Crimes Against Property,460,76,16.52,6
+2022,June,Burglary/Breaking & Entering,41,8,19.51,6
+2022,June,Counterfeiting/Forgery,6,NA,NA,6
+2022,June,Destruction/Damage/Vandalism of Property,81,23,28.4,6
+2022,June,Embezzlement,1,1,100,6
+2022,June,False Pretenses/Swindle/Confidence Game,14,1,7.14,6
+2022,June,Credit Card/Automated Teller Machine Fraud,42,7,16.67,6
+2022,June,Wire Fraud,5,NA,NA,6
+2022,June,Identity Theft,7,NA,NA,6
+2022,June,Robbery,5,2,40,6
+2022,June,Shoplifting,40,17,42.5,6
+2022,June,Theft From Building,38,5,13.16,6
+2022,June,Theft From Motor Vehicle,81,4,4.94,6
+2022,June,Theft of Motor Vehicle Parts/Accessories,14,NA,NA,6
+2022,June,All Other Larceny,51,3,5.88,6
+2022,June,Motor Vehicle Theft,34,5,14.71,6
+2022,June,Crimes Against Society,94,77,81.91,6
+2022,June,Drug/Narcotic Violations,47,40,85.11,6
+2022,June,Drug Equipment Violations,31,25,80.65,6
+2022,June,Pornography/Obscene Material,2,NA,NA,6
+2022,June,Weapon Law Violations,12,12,100,6
+2022,June,Animal Cruelty,2,NA,NA,6
+2022,July,All Offense Types,871,250,28.7,7
+2022,July,Crimes Against Person,253,92,36.36,7
+2022,July,Negligent Manslaughter,1,NA,NA,7
+2022,July,Kidnapping/Abduction,3,2,66.67,7
+2022,July,Rape,3,1,33.33,7
+2022,July,Sodomy,4,1,25,7
+2022,July,Fondling,4,NA,NA,7
+2022,July,Aggravated Assault,47,17,36.17,7
+2022,July,Simple Assault,176,66,37.5,7
+2022,July,Intimidation,15,5,33.33,7
+2022,July,Crimes Against Property,507,71,14,7
+2022,July,Burglary/Breaking & Entering,37,5,13.51,7
+2022,July,Counterfeiting/Forgery,8,2,25,7
+2022,July,Destruction/Damage/Vandalism of Property,92,14,15.22,7
+2022,July,False Pretenses/Swindle/Confidence Game,14,NA,NA,7
+2022,July,Credit Card/Automated Teller Machine Fraud,34,6,17.65,7
+2022,July,Wire Fraud,4,1,25,7
+2022,July,Identity Theft,2,NA,NA,7
+2022,July,Robbery,9,3,33.33,7
+2022,July,Pocket-picking,1,NA,NA,7
+2022,July,Purse-snatching,1,1,100,7
+2022,July,Shoplifting,42,12,28.57,7
+2022,July,Theft From Building,38,9,23.68,7
+2022,July,Theft From Motor Vehicle,108,4,3.7,7
+2022,July,Theft of Motor Vehicle Parts/Accessories,11,NA,NA,7
+2022,July,All Other Larceny,59,7,11.86,7
+2022,July,Motor Vehicle Theft,45,5,11.11,7
+2022,July,Stolen Property Offenses,2,2,100,7
+2022,July,Crimes Against Society,111,87,78.38,7
+2022,July,Drug/Narcotic Violations,56,47,83.93,7
+2022,July,Drug Equipment Violations,34,28,82.35,7
+2022,July,Pornography/Obscene Material,1,NA,NA,7
+2022,July,Weapon Law Violations,20,12,60,7
+2022,August,All Offense Types,822,235,28.59,8
+2022,August,Crimes Against Person,224,99,44.2,8
+2022,August,Murder and Nonnegligent Manslaughter,1,1,100,8
+2022,August,Kidnapping/Abduction,5,4,80,8
+2022,August,Rape,5,NA,NA,8
+2022,August,Sodomy,5,NA,NA,8
+2022,August,Fondling,5,1,20,8
+2022,August,Aggravated Assault,35,18,51.43,8
+2022,August,Simple Assault,152,67,44.08,8
+2022,August,Intimidation,15,8,53.33,8
+2022,August,"Human Trafficking, Involuntary Servitude",1,NA,NA,8
+2022,August,Crimes Against Property,505,55,10.89,8
+2022,August,Arson,2,2,100,8
+2022,August,Bribery,2,1,50,8
+2022,August,Burglary/Breaking & Entering,39,3,7.69,8
+2022,August,Counterfeiting/Forgery,5,NA,NA,8
+2022,August,Destruction/Damage/Vandalism of Property,73,14,19.18,8
+2022,August,Embezzlement,1,NA,NA,8
+2022,August,Extortion/Blackmail,4,NA,NA,8
+2022,August,False Pretenses/Swindle/Confidence Game,15,1,6.67,8
+2022,August,Credit Card/Automated Teller Machine Fraud,38,2,5.26,8
+2022,August,Wire Fraud,5,NA,NA,8
+2022,August,Identity Theft,8,NA,NA,8
+2022,August,Hacking/Computer Invasion,1,NA,NA,8
+2022,August,Robbery,7,4,57.14,8
+2022,August,Pocket-picking,1,NA,NA,8
+2022,August,Purse-snatching,1,NA,NA,8
+2022,August,Shoplifting,35,10,28.57,8
+2022,August,Theft From Building,31,2,6.45,8
+2022,August,Theft From Motor Vehicle,102,2,1.96,8
+2022,August,Theft of Motor Vehicle Parts/Accessories,19,NA,NA,8
+2022,August,All Other Larceny,65,3,4.62,8
+2022,August,Motor Vehicle Theft,47,9,19.15,8
+2022,August,Stolen Property Offenses,4,2,50,8
+2022,August,Crimes Against Society,93,81,87.1,8
+2022,August,Drug/Narcotic Violations,49,42,85.71,8
+2022,August,Drug Equipment Violations,30,27,90,8
+2022,August,Weapon Law Violations,14,12,85.71,8
+2022,September,All Offense Types,868,258,29.72,9
+2022,September,Crimes Against Person,245,110,44.9,9
+2022,September,Kidnapping/Abduction,6,6,100,9
+2022,September,Rape,2,NA,NA,9
+2022,September,Sodomy,4,NA,NA,9
+2022,September,Fondling,5,NA,NA,9
+2022,September,Aggravated Assault,44,24,54.55,9
+2022,September,Simple Assault,161,67,41.61,9
+2022,September,Intimidation,23,13,56.52,9
+2022,September,Crimes Against Property,519,64,12.33,9
+2022,September,Arson,3,1,33.33,9
+2022,September,Burglary/Breaking & Entering,38,6,15.79,9
+2022,September,Counterfeiting/Forgery,4,1,25,9
+2022,September,Destruction/Damage/Vandalism of Property,97,24,24.74,9
+2022,September,Extortion/Blackmail,2,NA,NA,9
+2022,September,False Pretenses/Swindle/Confidence Game,12,1,8.33,9
+2022,September,Credit Card/Automated Teller Machine Fraud,39,1,2.56,9
+2022,September,Wire Fraud,1,NA,NA,9
+2022,September,Identity Theft,7,1,14.29,9
+2022,September,Hacking/Computer Invasion,1,NA,NA,9
+2022,September,Robbery,3,1,33.33,9
+2022,September,Pocket-picking,1,NA,NA,9
+2022,September,Shoplifting,27,8,29.63,9
+2022,September,Theft From Building,30,1,3.33,9
+2022,September,Theft From Motor Vehicle,130,5,3.85,9
+2022,September,Theft of Motor Vehicle Parts/Accessories,16,1,6.25,9
+2022,September,All Other Larceny,52,6,11.54,9
+2022,September,Motor Vehicle Theft,54,6,11.11,9
+2022,September,Stolen Property Offenses,2,1,50,9
+2022,September,Crimes Against Society,104,84,80.77,9
+2022,September,Drug/Narcotic Violations,54,45,83.33,9
+2022,September,Drug Equipment Violations,30,27,90,9
+2022,September,Weapon Law Violations,20,12,60,9
+2022,October,All Offense Types,818,245,29.95,10
+2022,October,Crimes Against Person,266,107,40.23,10
+2022,October,Murder and Nonnegligent Manslaughter,2,2,100,10
+2022,October,Kidnapping/Abduction,4,4,100,10
+2022,October,Rape,6,2,33.33,10
+2022,October,Sodomy,3,NA,NA,10
+2022,October,Fondling,6,1,16.67,10
+2022,October,Statutory Rape,2,NA,NA,10
+2022,October,Aggravated Assault,39,15,38.46,10
+2022,October,Simple Assault,188,78,41.49,10
+2022,October,Intimidation,16,5,31.25,10
+2022,October,Crimes Against Property,455,67,14.73,10
+2022,October,Arson,5,3,60,10
+2022,October,Burglary/Breaking & Entering,35,7,20,10
+2022,October,Counterfeiting/Forgery,10,2,20,10
+2022,October,Destruction/Damage/Vandalism of Property,97,15,15.46,10
+2022,October,Extortion/Blackmail,2,NA,NA,10
+2022,October,False Pretenses/Swindle/Confidence Game,14,1,7.14,10
+2022,October,Credit Card/Automated Teller Machine Fraud,26,2,7.69,10
+2022,October,Wire Fraud,5,NA,NA,10
+2022,October,Identity Theft,7,NA,NA,10
+2022,October,Robbery,8,3,37.5,10
+2022,October,Purse-snatching,2,NA,NA,10
+2022,October,Shoplifting,28,7,25,10
+2022,October,Theft From Building,27,10,37.04,10
+2022,October,Theft From Motor Vehicle,71,2,2.82,10
+2022,October,Theft of Motor Vehicle Parts/Accessories,23,NA,NA,10
+2022,October,All Other Larceny,55,7,12.73,10
+2022,October,Motor Vehicle Theft,38,6,15.79,10
+2022,October,Stolen Property Offenses,2,2,100,10
+2022,October,Crimes Against Society,97,71,73.2,10
+2022,October,Drug/Narcotic Violations,49,38,77.55,10
+2022,October,Drug Equipment Violations,33,24,72.73,10
+2022,October,Pornography/Obscene Material,3,1,33.33,10
+2022,October,Purchasing Prostitution,1,NA,NA,10
+2022,October,Weapon Law Violations,11,8,72.73,10
+2022,November,All Offense Types,674,189,28.04,11
+2022,November,Crimes Against Person,223,95,42.6,11
+2022,November,Murder and Nonnegligent Manslaughter,3,3,100,11
+2022,November,Kidnapping/Abduction,3,1,33.33,11
+2022,November,Rape,7,NA,NA,11
+2022,November,Sodomy,2,NA,NA,11
+2022,November,Fondling,3,2,66.67,11
+2022,November,Aggravated Assault,37,15,40.54,11
+2022,November,Simple Assault,156,67,42.95,11
+2022,November,Intimidation,12,7,58.33,11
+2022,November,Crimes Against Property,398,52,13.07,11
+2022,November,Arson,2,NA,NA,11
+2022,November,Burglary/Breaking & Entering,25,NA,NA,11
+2022,November,Counterfeiting/Forgery,16,4,25,11
+2022,November,Destruction/Damage/Vandalism of Property,74,11,14.86,11
+2022,November,Embezzlement,2,NA,NA,11
+2022,November,Extortion/Blackmail,4,NA,NA,11
+2022,November,False Pretenses/Swindle/Confidence Game,8,3,37.5,11
+2022,November,Credit Card/Automated Teller Machine Fraud,19,2,10.53,11
+2022,November,Wire Fraud,2,1,50,11
+2022,November,Identity Theft,6,1,16.67,11
+2022,November,Robbery,8,3,37.5,11
+2022,November,Shoplifting,38,9,23.68,11
+2022,November,Theft From Building,22,3,13.64,11
+2022,November,Theft From Motor Vehicle,74,3,4.05,11
+2022,November,Theft of Motor Vehicle Parts/Accessories,16,NA,NA,11
+2022,November,All Other Larceny,41,4,9.76,11
+2022,November,Motor Vehicle Theft,41,8,19.51,11
+2022,November,Crimes Against Society,53,42,79.25,11
+2022,November,Drug/Narcotic Violations,25,19,76,11
+2022,November,Drug Equipment Violations,17,15,88.24,11
+2022,November,Pornography/Obscene Material,1,NA,NA,11
+2022,November,Weapon Law Violations,10,8,80,11
+2022,December,All Offense Types,590,146,24.75,12
+2022,December,Crimes Against Person,160,78,48.75,12
+2022,December,Murder and Nonnegligent Manslaughter,1,1,100,12
+2022,December,Kidnapping/Abduction,3,3,100,12
+2022,December,Rape,7,1,14.29,12
+2022,December,Sodomy,2,NA,NA,12
+2022,December,Sexual Assault With An Object,1,NA,NA,12
+2022,December,Fondling,4,1,25,12
+2022,December,Statutory Rape,1,NA,NA,12
+2022,December,Aggravated Assault,20,8,40,12
+2022,December,Simple Assault,114,61,53.51,12
+2022,December,Intimidation,7,3,42.86,12
+2022,December,Crimes Against Property,388,38,9.79,12
+2022,December,Arson,1,1,100,12
+2022,December,Burglary/Breaking & Entering,29,3,10.34,12
+2022,December,Counterfeiting/Forgery,16,3,18.75,12
+2022,December,Destruction/Damage/Vandalism of Property,68,11,16.18,12
+2022,December,Embezzlement,2,NA,NA,12
+2022,December,False Pretenses/Swindle/Confidence Game,4,NA,NA,12
+2022,December,Credit Card/Automated Teller Machine Fraud,23,NA,NA,12
+2022,December,Wire Fraud,5,NA,NA,12
+2022,December,Identity Theft,1,NA,NA,12
+2022,December,Robbery,2,1,50,12
+2022,December,Shoplifting,26,2,7.69,12
+2022,December,Theft From Building,24,1,4.17,12
+2022,December,Theft From Motor Vehicle,80,3,3.75,12
+2022,December,Theft of Motor Vehicle Parts/Accessories,17,NA,NA,12
+2022,December,All Other Larceny,49,7,14.29,12
+2022,December,Motor Vehicle Theft,41,6,14.63,12
+2022,December,Crimes Against Society,42,30,71.43,12
+2022,December,Drug/Narcotic Violations,17,14,82.35,12
+2022,December,Drug Equipment Violations,11,10,90.91,12
+2022,December,Pornography/Obscene Material,3,NA,NA,12
+2022,December,Weapon Law Violations,11,6,54.55,12
+2023,January,All Offense Types,686,179,26.09,1
+2023,January,Crimes Against Person,237,93,39.24,1
+2023,January,Murder and Nonnegligent Manslaughter,1,1,100,1
+2023,January,Kidnapping/Abduction,7,6,85.71,1
+2023,January,Rape,3,NA,NA,1
+2023,January,Sodomy,2,NA,NA,1
+2023,January,Sexual Assault With An Object,1,NA,NA,1
+2023,January,Fondling,9,NA,NA,1
+2023,January,Aggravated Assault,22,12,54.55,1
+2023,January,Simple Assault,183,69,37.7,1
+2023,January,Intimidation,9,5,55.56,1
+2023,January,Crimes Against Property,402,48,11.94,1
+2023,January,Arson,2,1,50,1
+2023,January,Burglary/Breaking & Entering,24,4,16.67,1
+2023,January,Counterfeiting/Forgery,10,NA,NA,1
+2023,January,Destruction/Damage/Vandalism of Property,71,11,15.49,1
+2023,January,Embezzlement,2,1,50,1
+2023,January,Extortion/Blackmail,2,NA,NA,1
+2023,January,False Pretenses/Swindle/Confidence Game,18,1,5.56,1
+2023,January,Credit Card/Automated Teller Machine Fraud,24,2,8.33,1
+2023,January,Wire Fraud,4,NA,NA,1
+2023,January,Identity Theft,3,NA,NA,1
+2023,January,Robbery,5,3,60,1
+2023,January,Shoplifting,44,11,25,1
+2023,January,Theft From Building,40,6,15,1
+2023,January,Theft From Motor Vehicle,61,2,3.28,1
+2023,January,Theft of Motor Vehicle Parts/Accessories,27,1,3.7,1
+2023,January,All Other Larceny,39,2,5.13,1
+2023,January,Motor Vehicle Theft,25,2,8,1
+2023,January,Stolen Property Offenses,1,1,100,1
+2023,January,Crimes Against Society,47,38,80.85,1
+2023,January,Drug/Narcotic Violations,16,14,87.5,1
+2023,January,Drug Equipment Violations,15,14,93.33,1
+2023,January,Pornography/Obscene Material,3,1,33.33,1
+2023,January,Weapon Law Violations,12,9,75,1
+2023,January,Animal Cruelty,1,NA,NA,1
+2023,February,All Offense Types,573,170,29.67,2
+2023,February,Crimes Against Person,189,74,39.15,2
+2023,February,Kidnapping/Abduction,6,6,100,2
+2023,February,Rape,3,NA,NA,2
+2023,February,Sexual Assault With An Object,1,NA,NA,2
+2023,February,Fondling,4,NA,NA,2
+2023,February,Incest,1,NA,NA,2
+2023,February,Aggravated Assault,19,6,31.58,2
+2023,February,Simple Assault,135,54,40,2
+2023,February,Intimidation,20,8,40,2
+2023,February,Crimes Against Property,332,58,17.47,2
+2023,February,Arson,2,1,50,2
+2023,February,Burglary/Breaking & Entering,36,10,27.78,2
+2023,February,Counterfeiting/Forgery,13,7,53.85,2
+2023,February,Destruction/Damage/Vandalism of Property,47,11,23.4,2
+2023,February,Extortion/Blackmail,1,NA,NA,2
+2023,February,False Pretenses/Swindle/Confidence Game,11,NA,NA,2
+2023,February,Credit Card/Automated Teller Machine Fraud,20,NA,NA,2
+2023,February,Wire Fraud,4,NA,NA,2
+2023,February,Identity Theft,7,NA,NA,2
+2023,February,Robbery,3,1,33.33,2
+2023,February,Shoplifting,22,8,36.36,2
+2023,February,Theft From Building,29,5,17.24,2
+2023,February,Theft From Motor Vehicle,46,NA,NA,2
+2023,February,Theft of Motor Vehicle Parts/Accessories,28,3,10.71,2
+2023,February,All Other Larceny,37,3,8.11,2
+2023,February,Motor Vehicle Theft,24,7,29.17,2
+2023,February,Stolen Property Offenses,2,2,100,2
+2023,February,Crimes Against Society,52,38,73.08,2
+2023,February,Drug/Narcotic Violations,24,20,83.33,2
+2023,February,Drug Equipment Violations,12,11,91.67,2
+2023,February,Weapon Law Violations,16,7,43.75,2
+2023,March,All Offense Types,608,190,31.25,3
+2023,March,Crimes Against Person,211,104,49.29,3
+2023,March,Kidnapping/Abduction,4,4,100,3
+2023,March,Rape,8,NA,NA,3
+2023,March,Sodomy,1,NA,NA,3
+2023,March,Fondling,10,3,30,3
+2023,March,Statutory Rape,1,NA,NA,3
+2023,March,Aggravated Assault,41,22,53.66,3
+2023,March,Simple Assault,131,67,51.15,3
+2023,March,Intimidation,15,8,53.33,3
+2023,March,Crimes Against Property,345,49,14.2,3
+2023,March,Arson,4,NA,NA,3
+2023,March,Burglary/Breaking & Entering,29,10,34.48,3
+2023,March,Counterfeiting/Forgery,9,1,11.11,3
+2023,March,Destruction/Damage/Vandalism of Property,57,8,14.04,3
+2023,March,Embezzlement,2,2,100,3
+2023,March,Extortion/Blackmail,2,NA,NA,3
+2023,March,False Pretenses/Swindle/Confidence Game,16,1,6.25,3
+2023,March,Credit Card/Automated Teller Machine Fraud,18,NA,NA,3
+2023,March,Wire Fraud,6,NA,NA,3
+2023,March,Identity Theft,5,NA,NA,3
+2023,March,Robbery,1,1,100,3
+2023,March,Shoplifting,30,12,40,3
+2023,March,Theft From Building,29,2,6.9,3
+2023,March,Theft From Coin Operated Machine or Device,1,NA,NA,3
+2023,March,Theft From Motor Vehicle,47,1,2.13,3
+2023,March,Theft of Motor Vehicle Parts/Accessories,19,1,5.26,3
+2023,March,All Other Larceny,42,4,9.52,3
+2023,March,Motor Vehicle Theft,27,6,22.22,3
+2023,March,Stolen Property Offenses,1,NA,NA,3
+2023,March,Crimes Against Society,52,37,71.15,3
+2023,March,Drug/Narcotic Violations,20,15,75,3
+2023,March,Drug Equipment Violations,15,12,80,3
+2023,March,Pornography/Obscene Material,2,NA,NA,3
+2023,March,Weapon Law Violations,15,10,66.67,3
+2023,April,All Offense Types,708,175,24.72,4
+2023,April,Crimes Against Person,223,84,37.67,4
+2023,April,Kidnapping/Abduction,8,5,62.5,4
+2023,April,Rape,5,NA,NA,4
+2023,April,Sodomy,2,NA,NA,4
+2023,April,Fondling,4,NA,NA,4
+2023,April,Statutory Rape,1,NA,NA,4
+2023,April,Aggravated Assault,36,16,44.44,4
+2023,April,Simple Assault,160,61,38.13,4
+2023,April,Intimidation,7,2,28.57,4
+2023,April,Crimes Against Property,436,52,11.93,4
+2023,April,Arson,2,NA,NA,4
+2023,April,Burglary/Breaking & Entering,32,12,37.5,4
+2023,April,Counterfeiting/Forgery,6,2,33.33,4
+2023,April,Destruction/Damage/Vandalism of Property,84,15,17.86,4
+2023,April,Embezzlement,2,2,100,4
+2023,April,Extortion/Blackmail,3,NA,NA,4
+2023,April,False Pretenses/Swindle/Confidence Game,18,4,22.22,4
+2023,April,Credit Card/Automated Teller Machine Fraud,22,NA,NA,4
+2023,April,Impersonation,1,NA,NA,4
+2023,April,Wire Fraud,2,NA,NA,4
+2023,April,Identity Theft,4,1,25,4
+2023,April,Hacking/Computer Invasion,1,NA,NA,4
+2023,April,Robbery,6,3,50,4
+2023,April,Pocket-picking,1,NA,NA,4
+2023,April,Shoplifting,39,6,15.38,4
+2023,April,Theft From Building,23,1,4.35,4
+2023,April,Theft From Coin Operated Machine or Device,1,NA,NA,4
+2023,April,Theft From Motor Vehicle,81,1,1.23,4
+2023,April,Theft of Motor Vehicle Parts/Accessories,34,NA,NA,4
+2023,April,All Other Larceny,46,2,4.35,4
+2023,April,Motor Vehicle Theft,28,3,10.71,4
+2023,April,Crimes Against Society,49,39,79.59,4
+2023,April,Drug/Narcotic Violations,18,13,72.22,4
+2023,April,Drug Equipment Violations,15,14,93.33,4
+2023,April,Pornography/Obscene Material,1,NA,NA,4
+2023,April,Weapon Law Violations,14,11,78.57,4
+2023,April,Animal Cruelty,1,1,100,4
+2023,May,All Offense Types,737,218,29.58,5
+2023,May,Crimes Against Person,288,135,46.88,5
+2023,May,Murder and Nonnegligent Manslaughter,5,5,100,5
+2023,May,Negligent Manslaughter,2,1,50,5
+2023,May,Kidnapping/Abduction,6,3,50,5
+2023,May,Rape,6,2,33.33,5
+2023,May,Sodomy,3,1,33.33,5
+2023,May,Fondling,8,1,12.5,5
+2023,May,Statutory Rape,1,1,100,5
+2023,May,Aggravated Assault,55,29,52.73,5
+2023,May,Simple Assault,182,81,44.51,5
+2023,May,Intimidation,20,11,55,5
+2023,May,Crimes Against Property,402,47,11.69,5
+2023,May,Arson,1,NA,NA,5
+2023,May,Burglary/Breaking & Entering,31,5,16.13,5
+2023,May,Counterfeiting/Forgery,7,NA,NA,5
+2023,May,Destruction/Damage/Vandalism of Property,73,17,23.29,5
+2023,May,Embezzlement,1,1,100,5
+2023,May,Extortion/Blackmail,1,NA,NA,5
+2023,May,False Pretenses/Swindle/Confidence Game,11,1,9.09,5
+2023,May,Credit Card/Automated Teller Machine Fraud,15,1,6.67,5
+2023,May,Impersonation,2,NA,NA,5
+2023,May,Wire Fraud,5,NA,NA,5
+2023,May,Identity Theft,2,NA,NA,5
+2023,May,Robbery,6,2,33.33,5
+2023,May,Purse-snatching,1,NA,NA,5
+2023,May,Shoplifting,34,8,23.53,5
+2023,May,Theft From Building,36,NA,NA,5
+2023,May,Theft From Motor Vehicle,66,2,3.03,5
+2023,May,Theft of Motor Vehicle Parts/Accessories,25,NA,NA,5
+2023,May,All Other Larceny,50,6,12,5
+2023,May,Motor Vehicle Theft,34,3,8.82,5
+2023,May,Stolen Property Offenses,1,1,100,5
+2023,May,Crimes Against Society,47,36,76.6,5
+2023,May,Drug/Narcotic Violations,17,14,82.35,5
+2023,May,Drug Equipment Violations,16,11,68.75,5
+2023,May,Pornography/Obscene Material,1,1,100,5
+2023,May,Weapon Law Violations,13,10,76.92,5
+2023,June,All Offense Types,669,158,23.62,6
+2023,June,Crimes Against Person,182,71,39.01,6
+2023,June,Murder and Nonnegligent Manslaughter,1,1,100,6
+2023,June,Kidnapping/Abduction,2,1,50,6
+2023,June,Rape,6,NA,NA,6
+2023,June,Sodomy,1,NA,NA,6
+2023,June,Fondling,10,1,10,6
+2023,June,Aggravated Assault,33,14,42.42,6
+2023,June,Simple Assault,117,51,43.59,6
+2023,June,Intimidation,12,3,25,6
+2023,June,Crimes Against Property,443,53,11.96,6
+2023,June,Arson,6,1,16.67,6
+2023,June,Burglary/Breaking & Entering,50,5,10,6
+2023,June,Counterfeiting/Forgery,10,NA,NA,6
+2023,June,Destruction/Damage/Vandalism of Property,71,10,14.08,6
+2023,June,Embezzlement,1,NA,NA,6
+2023,June,Extortion/Blackmail,2,NA,NA,6
+2023,June,False Pretenses/Swindle/Confidence Game,8,1,12.5,6
+2023,June,Credit Card/Automated Teller Machine Fraud,29,1,3.45,6
+2023,June,Wire Fraud,1,NA,NA,6
+2023,June,Identity Theft,5,NA,NA,6
+2023,June,Robbery,5,2,40,6
+2023,June,Pocket-picking,2,NA,NA,6
+2023,June,Purse-snatching,2,1,50,6
+2023,June,Shoplifting,32,11,34.38,6
+2023,June,Theft From Building,22,1,4.55,6
+2023,June,Theft From Motor Vehicle,76,5,6.58,6
+2023,June,Theft of Motor Vehicle Parts/Accessories,17,NA,NA,6
+2023,June,All Other Larceny,52,5,9.62,6
+2023,June,Motor Vehicle Theft,49,7,14.29,6
+2023,June,Stolen Property Offenses,3,3,100,6
+2023,June,Crimes Against Society,44,34,77.27,6
+2023,June,Drug/Narcotic Violations,18,14,77.78,6
+2023,June,Drug Equipment Violations,13,12,92.31,6
+2023,June,Pornography/Obscene Material,2,1,50,6
+2023,June,Weapon Law Violations,10,7,70,6
+2023,June,Animal Cruelty,1,NA,NA,6
+2023,July,All Offense Types,670,147,21.94,7
+2023,July,Crimes Against Person,192,64,33.33,7
+2023,July,Kidnapping/Abduction,2,2,100,7
+2023,July,Rape,7,NA,NA,7
+2023,July,Sodomy,2,NA,NA,7
+2023,July,Fondling,5,NA,NA,7
+2023,July,Aggravated Assault,28,10,35.71,7
+2023,July,Simple Assault,132,49,37.12,7
+2023,July,Intimidation,15,3,20,7
+2023,July,"Human Trafficking, Commercial Sex Acts",1,NA,NA,7
+2023,July,Crimes Against Property,429,52,12.12,7
+2023,July,Arson,2,2,100,7
+2023,July,Burglary/Breaking & Entering,37,8,21.62,7
+2023,July,Counterfeiting/Forgery,8,1,12.5,7
+2023,July,Destruction/Damage/Vandalism of Property,87,12,13.79,7
+2023,July,Embezzlement,1,1,100,7
+2023,July,Extortion/Blackmail,1,NA,NA,7
+2023,July,False Pretenses/Swindle/Confidence Game,14,2,14.29,7
+2023,July,Credit Card/Automated Teller Machine Fraud,20,1,5,7
+2023,July,Wire Fraud,2,NA,NA,7
+2023,July,Identity Theft,4,NA,NA,7
+2023,July,Robbery,3,2,66.67,7
+2023,July,Pocket-picking,1,NA,NA,7
+2023,July,Shoplifting,36,10,27.78,7
+2023,July,Theft From Building,34,3,8.82,7
+2023,July,Theft From Motor Vehicle,67,1,1.49,7
+2023,July,Theft of Motor Vehicle Parts/Accessories,8,NA,NA,7
+2023,July,All Other Larceny,58,5,8.62,7
+2023,July,Motor Vehicle Theft,46,4,8.7,7
+2023,July,Crimes Against Society,49,31,63.27,7
+2023,July,Drug/Narcotic Violations,19,11,57.89,7
+2023,July,Drug Equipment Violations,16,13,81.25,7
+2023,July,Pornography/Obscene Material,1,1,100,7
+2023,July,Weapon Law Violations,11,5,45.45,7
+2023,July,Animal Cruelty,2,1,50,7
+2023,August,All Offense Types,734,169,23.02,8
+2023,August,Crimes Against Person,225,84,37.33,8
+2023,August,Negligent Manslaughter,1,1,100,8
+2023,August,Kidnapping/Abduction,3,1,33.33,8
+2023,August,Rape,5,NA,NA,8
+2023,August,Sodomy,1,NA,NA,8
+2023,August,Sexual Assault With An Object,1,NA,NA,8
+2023,August,Fondling,4,NA,NA,8
+2023,August,Aggravated Assault,42,22,52.38,8
+2023,August,Simple Assault,158,55,34.81,8
+2023,August,Intimidation,10,5,50,8
+2023,August,Crimes Against Property,463,48,10.37,8
+2023,August,Arson,3,1,33.33,8
+2023,August,Burglary/Breaking & Entering,37,9,24.32,8
+2023,August,Counterfeiting/Forgery,6,1,16.67,8
+2023,August,Destruction/Damage/Vandalism of Property,71,6,8.45,8
+2023,August,Embezzlement,1,NA,NA,8
+2023,August,Extortion/Blackmail,1,NA,NA,8
+2023,August,False Pretenses/Swindle/Confidence Game,16,2,12.5,8
+2023,August,Credit Card/Automated Teller Machine Fraud,27,3,11.11,8
+2023,August,Impersonation,2,NA,NA,8
+2023,August,Wire Fraud,4,NA,NA,8
+2023,August,Identity Theft,4,NA,NA,8
+2023,August,Hacking/Computer Invasion,1,NA,NA,8
+2023,August,Robbery,4,1,25,8
+2023,August,Shoplifting,41,9,21.95,8
+2023,August,Theft From Building,38,2,5.26,8
+2023,August,Theft From Motor Vehicle,91,4,4.4,8
+2023,August,Theft of Motor Vehicle Parts/Accessories,13,NA,NA,8
+2023,August,All Other Larceny,55,3,5.45,8
+2023,August,Motor Vehicle Theft,48,7,14.58,8
+2023,August,Crimes Against Society,46,37,80.43,8
+2023,August,Drug/Narcotic Violations,24,19,79.17,8
+2023,August,Drug Equipment Violations,11,10,90.91,8
+2023,August,Pornography/Obscene Material,1,NA,NA,8
+2023,August,Weapon Law Violations,10,8,80,8
+2023,September,All Offense Types,743,171,23.01,9
+2023,September,Crimes Against Person,236,89,37.71,9
+2023,September,Murder and Nonnegligent Manslaughter,1,1,100,9
+2023,September,Kidnapping/Abduction,4,2,50,9
+2023,September,Rape,7,NA,NA,9
+2023,September,Sodomy,5,NA,NA,9
+2023,September,Fondling,9,NA,NA,9
+2023,September,Statutory Rape,1,NA,NA,9
+2023,September,Aggravated Assault,33,11,33.33,9
+2023,September,Simple Assault,165,73,44.24,9
+2023,September,Intimidation,11,2,18.18,9
+2023,September,Crimes Against Property,468,53,11.32,9
+2023,September,Arson,2,1,50,9
+2023,September,Burglary/Breaking & Entering,35,7,20,9
+2023,September,Counterfeiting/Forgery,3,NA,NA,9
+2023,September,Destruction/Damage/Vandalism of Property,89,10,11.24,9
+2023,September,Embezzlement,5,NA,NA,9
+2023,September,Extortion/Blackmail,1,NA,NA,9
+2023,September,False Pretenses/Swindle/Confidence Game,16,NA,NA,9
+2023,September,Credit Card/Automated Teller Machine Fraud,22,3,13.64,9
+2023,September,Wire Fraud,4,NA,NA,9
+2023,September,Identity Theft,6,NA,NA,9
+2023,September,Robbery,2,NA,NA,9
+2023,September,Shoplifting,38,11,28.95,9
+2023,September,Theft From Building,40,4,10,9
+2023,September,Theft From Motor Vehicle,88,3,3.41,9
+2023,September,Theft of Motor Vehicle Parts/Accessories,21,1,4.76,9
+2023,September,All Other Larceny,69,6,8.7,9
+2023,September,Motor Vehicle Theft,26,6,23.08,9
+2023,September,Stolen Property Offenses,1,1,100,9
+2023,September,Crimes Against Society,39,29,74.36,9
+2023,September,Drug/Narcotic Violations,13,12,92.31,9
+2023,September,Drug Equipment Violations,10,8,80,9
+2023,September,Pornography/Obscene Material,4,3,75,9
+2023,September,Prostitution,1,NA,NA,9
+2023,September,Weapon Law Violations,11,6,54.55,9
+2023,October,All Offense Types,850,162,19.06,10
+2023,October,Crimes Against Person,226,91,40.27,10
+2023,October,Murder and Nonnegligent Manslaughter,1,1,100,10
+2023,October,Kidnapping/Abduction,3,2,66.67,10
+2023,October,Rape,5,NA,NA,10
+2023,October,Sodomy,1,NA,NA,10
+2023,October,Fondling,6,1,16.67,10
+2023,October,Statutory Rape,1,NA,NA,10
+2023,October,Aggravated Assault,25,7,28,10
+2023,October,Simple Assault,177,77,43.5,10
+2023,October,Intimidation,7,3,42.86,10
+2023,October,Crimes Against Property,582,42,7.22,10
+2023,October,Arson,1,NA,NA,10
+2023,October,Burglary/Breaking & Entering,33,4,12.12,10
+2023,October,Counterfeiting/Forgery,5,NA,NA,10
+2023,October,Destruction/Damage/Vandalism of Property,160,15,9.38,10
+2023,October,Embezzlement,1,NA,NA,10
+2023,October,Extortion/Blackmail,2,NA,NA,10
+2023,October,False Pretenses/Swindle/Confidence Game,12,1,8.33,10
+2023,October,Credit Card/Automated Teller Machine Fraud,27,NA,NA,10
+2023,October,Wire Fraud,4,NA,NA,10
+2023,October,Identity Theft,4,NA,NA,10
+2023,October,Robbery,3,NA,NA,10
+2023,October,Pocket-picking,1,NA,NA,10
+2023,October,Shoplifting,42,9,21.43,10
+2023,October,Theft From Building,38,6,15.79,10
+2023,October,Theft From Motor Vehicle,109,NA,NA,10
+2023,October,Theft of Motor Vehicle Parts/Accessories,13,NA,NA,10
+2023,October,All Other Larceny,48,1,2.08,10
+2023,October,Motor Vehicle Theft,78,5,6.41,10
+2023,October,Stolen Property Offenses,1,1,100,10
+2023,October,Crimes Against Society,42,29,69.05,10
+2023,October,Drug/Narcotic Violations,22,15,68.18,10
+2023,October,Drug Equipment Violations,9,9,100,10
+2023,October,Pornography/Obscene Material,1,NA,NA,10
+2023,October,Weapon Law Violations,9,4,44.44,10
+2023,October,Animal Cruelty,1,1,100,10
+2023,November,All Offense Types,600,124,20.67,11
+2023,November,Crimes Against Person,159,60,37.74,11
+2023,November,Kidnapping/Abduction,7,6,85.71,11
+2023,November,Rape,2,NA,NA,11
+2023,November,Fondling,4,NA,NA,11
+2023,November,Statutory Rape,1,NA,NA,11
+2023,November,Aggravated Assault,24,11,45.83,11
+2023,November,Simple Assault,113,41,36.28,11
+2023,November,Intimidation,8,2,25,11
+2023,November,Crimes Against Property,406,40,9.85,11
+2023,November,Arson,2,NA,NA,11
+2023,November,Burglary/Breaking & Entering,28,4,14.29,11
+2023,November,Counterfeiting/Forgery,7,NA,NA,11
+2023,November,Destruction/Damage/Vandalism of Property,91,10,10.99,11
+2023,November,Embezzlement,4,2,50,11
+2023,November,Extortion/Blackmail,1,NA,NA,11
+2023,November,False Pretenses/Swindle/Confidence Game,11,NA,NA,11
+2023,November,Credit Card/Automated Teller Machine Fraud,22,2,9.09,11
+2023,November,Wire Fraud,3,NA,NA,11
+2023,November,Identity Theft,2,NA,NA,11
+2023,November,Robbery,3,1,33.33,11
+2023,November,Shoplifting,35,6,17.14,11
+2023,November,Theft From Building,26,4,15.38,11
+2023,November,Theft From Motor Vehicle,73,2,2.74,11
+2023,November,Theft of Motor Vehicle Parts/Accessories,13,NA,NA,11
+2023,November,All Other Larceny,38,4,10.53,11
+2023,November,Motor Vehicle Theft,47,5,10.64,11
+2023,November,Crimes Against Society,35,24,68.57,11
+2023,November,Drug/Narcotic Violations,14,10,71.43,11
+2023,November,Drug Equipment Violations,6,5,83.33,11
+2023,November,Pornography/Obscene Material,3,1,33.33,11
+2023,November,Weapon Law Violations,12,8,66.67,11
+2023,December,All Offense Types,553,112,20.25,12
+2023,December,Crimes Against Person,166,56,33.73,12
+2023,December,Murder and Nonnegligent Manslaughter,1,1,100,12
+2023,December,Kidnapping/Abduction,4,4,100,12
+2023,December,Rape,2,NA,NA,12
+2023,December,Sodomy,1,NA,NA,12
+2023,December,Fondling,5,1,20,12
+2023,December,Aggravated Assault,17,4,23.53,12
+2023,December,Simple Assault,122,41,33.61,12
+2023,December,Intimidation,14,5,35.71,12
+2023,December,Crimes Against Property,353,33,9.35,12
+2023,December,Arson,2,1,50,12
+2023,December,Burglary/Breaking & Entering,28,1,3.57,12
+2023,December,Counterfeiting/Forgery,5,NA,NA,12
+2023,December,Destruction/Damage/Vandalism of Property,75,11,14.67,12
+2023,December,Embezzlement,2,NA,NA,12
+2023,December,Extortion/Blackmail,4,NA,NA,12
+2023,December,False Pretenses/Swindle/Confidence Game,13,NA,NA,12
+2023,December,Credit Card/Automated Teller Machine Fraud,16,2,12.5,12
+2023,December,Wire Fraud,2,NA,NA,12
+2023,December,Identity Theft,1,NA,NA,12
+2023,December,Hacking/Computer Invasion,1,NA,NA,12
+2023,December,Robbery,3,1,33.33,12
+2023,December,Shoplifting,34,7,20.59,12
+2023,December,Theft From Building,32,3,9.38,12
+2023,December,Theft From Motor Vehicle,53,2,3.77,12
+2023,December,Theft of Motor Vehicle Parts/Accessories,13,1,7.69,12
+2023,December,All Other Larceny,40,2,5,12
+2023,December,Motor Vehicle Theft,29,2,6.9,12
+2023,December,Crimes Against Society,34,23,67.65,12
+2023,December,Drug/Narcotic Violations,17,14,82.35,12
+2023,December,Drug Equipment Violations,5,5,100,12
+2023,December,Pornography/Obscene Material,3,1,33.33,12
+2023,December,Weapon Law Violations,9,3,33.33,12
+2024,January,All Offense Types,432,104,24.07,1
+2024,January,Crimes Against Person,136,49,36.03,1
+2024,January,Murder and Nonnegligent Manslaughter,1,1,100,1
+2024,January,Kidnapping/Abduction,3,2,66.67,1
+2024,January,Sodomy,2,1,50,1
+2024,January,Sexual Assault With An Object,1,NA,NA,1
+2024,January,Fondling,2,NA,NA,1
+2024,January,Statutory Rape,1,1,100,1
+2024,January,Aggravated Assault,24,13,54.17,1
+2024,January,Simple Assault,98,30,30.61,1
+2024,January,Intimidation,4,1,25,1
+2024,January,Crimes Against Property,273,41,15.02,1
+2024,January,Arson,2,1,50,1
+2024,January,Burglary/Breaking & Entering,15,3,20,1
+2024,January,Counterfeiting/Forgery,4,2,50,1
+2024,January,Destruction/Damage/Vandalism of Property,56,6,10.71,1
+2024,January,Embezzlement,5,1,20,1
+2024,January,False Pretenses/Swindle/Confidence Game,8,1,12.5,1
+2024,January,Credit Card/Automated Teller Machine Fraud,11,1,9.09,1
+2024,January,Wire Fraud,1,NA,NA,1
+2024,January,Identity Theft,3,NA,NA,1
+2024,January,Robbery,7,1,14.29,1
+2024,January,Shoplifting,36,9,25,1
+2024,January,Theft From Building,17,2,11.76,1
+2024,January,Theft From Motor Vehicle,28,3,10.71,1
+2024,January,Theft of Motor Vehicle Parts/Accessories,4,NA,NA,1
+2024,January,All Other Larceny,36,3,8.33,1
+2024,January,Motor Vehicle Theft,40,8,20,1
+2024,January,Crimes Against Society,23,14,60.87,1
+2024,January,Drug/Narcotic Violations,10,7,70,1
+2024,January,Drug Equipment Violations,6,5,83.33,1
+2024,January,Pornography/Obscene Material,1,1,100,1
+2024,January,Weapon Law Violations,6,1,16.67,1
+2024,February,All Offense Types,676,155,22.93,2
+2024,February,Crimes Against Person,188,84,44.68,2
+2024,February,Murder and Nonnegligent Manslaughter,1,1,100,2
+2024,February,Kidnapping/Abduction,2,NA,NA,2
+2024,February,Rape,6,1,16.67,2
+2024,February,Sodomy,2,NA,NA,2
+2024,February,Fondling,2,NA,NA,2
+2024,February,Aggravated Assault,32,12,37.5,2
+2024,February,Simple Assault,133,64,48.12,2
+2024,February,Intimidation,10,6,60,2
+2024,February,Crimes Against Property,447,39,8.72,2
+2024,February,Arson,3,1,33.33,2
+2024,February,Burglary/Breaking & Entering,41,2,4.88,2
+2024,February,Counterfeiting/Forgery,9,2,22.22,2
+2024,February,Destruction/Damage/Vandalism of Property,99,7,7.07,2
+2024,February,Embezzlement,1,NA,NA,2
+2024,February,False Pretenses/Swindle/Confidence Game,16,1,6.25,2
+2024,February,Credit Card/Automated Teller Machine Fraud,13,NA,NA,2
+2024,February,Wire Fraud,2,NA,NA,2
+2024,February,Identity Theft,3,NA,NA,2
+2024,February,Robbery,4,3,75,2
+2024,February,Shoplifting,32,8,25,2
+2024,February,Theft From Building,30,2,6.67,2
+2024,February,Theft From Motor Vehicle,90,6,6.67,2
+2024,February,Theft of Motor Vehicle Parts/Accessories,9,NA,NA,2
+2024,February,All Other Larceny,40,4,10,2
+2024,February,Motor Vehicle Theft,55,3,5.45,2
+2024,February,Crimes Against Society,41,32,78.05,2
+2024,February,Drug/Narcotic Violations,17,15,88.24,2
+2024,February,Drug Equipment Violations,9,8,88.89,2
+2024,February,Pornography/Obscene Material,2,1,50,2
+2024,February,Weapon Law Violations,13,8,61.54,2
+2024,March,All Offense Types,598,150,25.08,3
+2024,March,Crimes Against Person,201,64,31.84,3
+2024,March,Murder and Nonnegligent Manslaughter,2,1,50,3
+2024,March,Kidnapping/Abduction,9,2,22.22,3
+2024,March,Rape,2,NA,NA,3
+2024,March,Sodomy,2,NA,NA,3
+2024,March,Fondling,4,NA,NA,3
+2024,March,Aggravated Assault,27,13,48.15,3
+2024,March,Simple Assault,141,45,31.91,3
+2024,March,Intimidation,14,3,21.43,3
+2024,March,Crimes Against Property,346,50,14.45,3
+2024,March,Arson,3,NA,NA,3
+2024,March,Burglary/Breaking & Entering,22,8,36.36,3
+2024,March,Counterfeiting/Forgery,7,NA,NA,3
+2024,March,Destruction/Damage/Vandalism of Property,77,13,16.88,3
+2024,March,Embezzlement,1,NA,NA,3
+2024,March,Extortion/Blackmail,1,NA,NA,3
+2024,March,False Pretenses/Swindle/Confidence Game,16,NA,NA,3
+2024,March,Credit Card/Automated Teller Machine Fraud,11,NA,NA,3
+2024,March,Wire Fraud,1,NA,NA,3
+2024,March,Identity Theft,4,NA,NA,3
+2024,March,Robbery,5,2,40,3
+2024,March,Shoplifting,47,11,23.4,3
+2024,March,Theft From Building,19,2,10.53,3
+2024,March,Theft From Motor Vehicle,49,2,4.08,3
+2024,March,Theft of Motor Vehicle Parts/Accessories,3,NA,NA,3
+2024,March,All Other Larceny,44,5,11.36,3
+2024,March,Motor Vehicle Theft,34,5,14.71,3
+2024,March,Stolen Property Offenses,2,2,100,3
+2024,March,Crimes Against Society,51,36,70.59,3
+2024,March,Drug/Narcotic Violations,22,16,72.73,3
+2024,March,Drug Equipment Violations,16,13,81.25,3
+2024,March,Pornography/Obscene Material,2,NA,NA,3
+2024,March,Weapon Law Violations,11,7,63.64,3
+2024,April,All Offense Types,666,189,28.38,4
+2024,April,Crimes Against Person,218,91,41.74,4
+2024,April,Murder and Nonnegligent Manslaughter,2,2,100,4
+2024,April,Kidnapping/Abduction,10,8,80,4
+2024,April,Rape,1,NA,NA,4
+2024,April,Sodomy,5,1,20,4
+2024,April,Fondling,5,NA,NA,4
+2024,April,Aggravated Assault,37,13,35.14,4
+2024,April,Simple Assault,146,63,43.15,4
+2024,April,Intimidation,12,4,33.33,4
+2024,April,Crimes Against Property,406,62,15.27,4
+2024,April,Arson,6,1,16.67,4
+2024,April,Burglary/Breaking & Entering,38,7,18.42,4
+2024,April,Counterfeiting/Forgery,6,NA,NA,4
+2024,April,Destruction/Damage/Vandalism of Property,90,22,24.44,4
+2024,April,Embezzlement,6,3,50,4
+2024,April,False Pretenses/Swindle/Confidence Game,8,NA,NA,4
+2024,April,Credit Card/Automated Teller Machine Fraud,15,1,6.67,4
+2024,April,Wire Fraud,3,NA,NA,4
+2024,April,Identity Theft,5,NA,NA,4
+2024,April,Robbery,10,6,60,4
+2024,April,Purse-snatching,1,NA,NA,4
+2024,April,Shoplifting,55,7,12.73,4
+2024,April,Theft From Building,26,3,11.54,4
+2024,April,Theft From Motor Vehicle,41,2,4.88,4
+2024,April,Theft of Motor Vehicle Parts/Accessories,8,1,12.5,4
+2024,April,All Other Larceny,51,4,7.84,4
+2024,April,Motor Vehicle Theft,37,5,13.51,4
+2024,April,Crimes Against Society,42,36,85.71,4
+2024,April,Drug/Narcotic Violations,18,15,83.33,4
+2024,April,Drug Equipment Violations,8,8,100,4
+2024,April,Pornography/Obscene Material,2,1,50,4
+2024,April,Weapon Law Violations,14,12,85.71,4
+2024,May,All Offense Types,610,186,30.49,5
+2024,May,Crimes Against Person,208,104,50,5
+2024,May,Murder and Nonnegligent Manslaughter,3,3,100,5
+2024,May,Kidnapping/Abduction,5,4,80,5
+2024,May,Rape,6,NA,NA,5
+2024,May,Sodomy,1,NA,NA,5
+2024,May,Fondling,2,NA,NA,5
+2024,May,Aggravated Assault,50,32,64,5
+2024,May,Simple Assault,127,59,46.46,5
+2024,May,Intimidation,14,6,42.86,5
+2024,May,Crimes Against Property,361,50,13.85,5
+2024,May,Arson,3,1,33.33,5
+2024,May,Burglary/Breaking & Entering,43,5,11.63,5
+2024,May,Counterfeiting/Forgery,6,NA,NA,5
+2024,May,Destruction/Damage/Vandalism of Property,88,16,18.18,5
+2024,May,Embezzlement,2,2,100,5
+2024,May,False Pretenses/Swindle/Confidence Game,9,NA,NA,5
+2024,May,Credit Card/Automated Teller Machine Fraud,9,1,11.11,5
+2024,May,Wire Fraud,4,NA,NA,5
+2024,May,Identity Theft,2,NA,NA,5
+2024,May,Hacking/Computer Invasion,1,NA,NA,5
+2024,May,Robbery,2,NA,NA,5
+2024,May,Shoplifting,42,9,21.43,5
+2024,May,Theft From Building,25,3,12,5
+2024,May,Theft From Motor Vehicle,58,3,5.17,5
+2024,May,Theft of Motor Vehicle Parts/Accessories,6,NA,NA,5
+2024,May,All Other Larceny,29,5,17.24,5
+2024,May,Motor Vehicle Theft,31,4,12.9,5
+2024,May,Stolen Property Offenses,1,1,100,5
+2024,May,Crimes Against Society,41,32,78.05,5
+2024,May,Drug/Narcotic Violations,14,11,78.57,5
+2024,May,Drug Equipment Violations,11,10,90.91,5
+2024,May,Pornography/Obscene Material,3,NA,NA,5
+2024,May,Weapon Law Violations,13,11,84.62,5
+2024,June,All Offense Types,685,171,24.96,6
+2024,June,Crimes Against Person,218,73,33.49,6
+2024,June,Kidnapping/Abduction,2,1,50,6
+2024,June,Rape,7,NA,NA,6
+2024,June,Sodomy,2,1,50,6
+2024,June,Fondling,5,NA,NA,6
+2024,June,Aggravated Assault,49,21,42.86,6
+2024,June,Simple Assault,142,48,33.8,6
+2024,June,Intimidation,11,2,18.18,6
+2024,June,Crimes Against Property,410,51,12.44,6
+2024,June,Arson,1,1,100,6
+2024,June,Burglary/Breaking & Entering,44,6,13.64,6
+2024,June,Counterfeiting/Forgery,5,NA,NA,6
+2024,June,Destruction/Damage/Vandalism of Property,85,19,22.35,6
+2024,June,Embezzlement,1,NA,NA,6
+2024,June,False Pretenses/Swindle/Confidence Game,4,NA,NA,6
+2024,June,Credit Card/Automated Teller Machine Fraud,15,1,6.67,6
+2024,June,Wire Fraud,2,NA,NA,6
+2024,June,Identity Theft,3,NA,NA,6
+2024,June,Robbery,3,2,66.67,6
+2024,June,Purse-snatching,1,NA,NA,6
+2024,June,Shoplifting,33,6,18.18,6
+2024,June,Theft From Building,27,3,11.11,6
+2024,June,Theft From Motor Vehicle,69,6,8.7,6
+2024,June,Theft of Motor Vehicle Parts/Accessories,10,NA,NA,6
+2024,June,All Other Larceny,58,3,5.17,6
+2024,June,Motor Vehicle Theft,48,3,6.25,6
+2024,June,Stolen Property Offenses,1,1,100,6
+2024,June,Crimes Against Society,57,47,82.46,6
+2024,June,Drug/Narcotic Violations,24,21,87.5,6
+2024,June,Drug Equipment Violations,14,14,100,6
+2024,June,Pornography/Obscene Material,2,1,50,6
+2024,June,Weapon Law Violations,17,11,64.71,6
+2024,July,All Offense Types,649,176,27.12,7
+2024,July,Crimes Against Person,210,78,37.14,7
+2024,July,Kidnapping/Abduction,5,2,40,7
+2024,July,Rape,4,1,25,7
+2024,July,Sodomy,4,NA,NA,7
+2024,July,Fondling,7,NA,NA,7
+2024,July,Aggravated Assault,34,17,50,7
+2024,July,Simple Assault,131,44,33.59,7
+2024,July,Intimidation,25,14,56,7
+2024,July,Crimes Against Property,384,53,13.8,7
+2024,July,Arson,3,1,33.33,7
+2024,July,Burglary/Breaking & Entering,42,8,19.05,7
+2024,July,Counterfeiting/Forgery,3,NA,NA,7
+2024,July,Destruction/Damage/Vandalism of Property,79,14,17.72,7
+2024,July,Embezzlement,2,1,50,7
+2024,July,False Pretenses/Swindle/Confidence Game,13,NA,NA,7
+2024,July,Credit Card/Automated Teller Machine Fraud,16,NA,NA,7
+2024,July,Wire Fraud,3,NA,NA,7
+2024,July,Identity Theft,1,NA,NA,7
+2024,July,Robbery,6,2,33.33,7
+2024,July,Pocket-picking,1,NA,NA,7
+2024,July,Shoplifting,46,10,21.74,7
+2024,July,Theft From Building,26,2,7.69,7
+2024,July,Theft From Motor Vehicle,59,5,8.47,7
+2024,July,Theft of Motor Vehicle Parts/Accessories,8,NA,NA,7
+2024,July,All Other Larceny,39,7,17.95,7
+2024,July,Motor Vehicle Theft,37,3,8.11,7
+2024,July,Crimes Against Society,55,45,81.82,7
+2024,July,Drug/Narcotic Violations,25,20,80,7
+2024,July,Drug Equipment Violations,17,15,88.24,7
+2024,July,Pornography/Obscene Material,1,NA,NA,7
+2024,July,Weapon Law Violations,12,10,83.33,7
+2024,August,All Offense Types,730,164,22.47,8
+2024,August,Crimes Against Person,251,88,35.06,8
+2024,August,Negligent Manslaughter,2,2,100,8
+2024,August,Rape,5,NA,NA,8
+2024,August,Sexual Assault With An Object,2,NA,NA,8
+2024,August,Fondling,2,1,50,8
+2024,August,Aggravated Assault,55,22,40,8
+2024,August,Simple Assault,169,56,33.14,8
+2024,August,Intimidation,16,7,43.75,8
+2024,August,Crimes Against Property,445,50,11.24,8
+2024,August,Arson,1,NA,NA,8
+2024,August,Burglary/Breaking & Entering,49,11,22.45,8
+2024,August,Counterfeiting/Forgery,5,1,20,8
+2024,August,Destruction/Damage/Vandalism of Property,96,18,18.75,8
+2024,August,Embezzlement,3,1,33.33,8
+2024,August,False Pretenses/Swindle/Confidence Game,11,1,9.09,8
+2024,August,Credit Card/Automated Teller Machine Fraud,22,1,4.55,8
+2024,August,Wire Fraud,3,NA,NA,8
+2024,August,Identity Theft,1,NA,NA,8
+2024,August,Robbery,4,2,50,8
+2024,August,Purse-snatching,2,NA,NA,8
+2024,August,Shoplifting,44,8,18.18,8
+2024,August,Theft From Building,32,3,9.38,8
+2024,August,Theft From Motor Vehicle,75,1,1.33,8
+2024,August,Theft of Motor Vehicle Parts/Accessories,9,NA,NA,8
+2024,August,All Other Larceny,39,3,7.69,8
+2024,August,Motor Vehicle Theft,49,NA,NA,8
+2024,August,Crimes Against Society,34,26,76.47,8
+2024,August,Drug/Narcotic Violations,19,18,94.74,8
+2024,August,Drug Equipment Violations,7,6,85.71,8
+2024,August,Pornography/Obscene Material,2,NA,NA,8
+2024,August,Weapon Law Violations,6,2,33.33,8
+2024,September,All Offense Types,306,80,26.14,9
+2024,September,Crimes Against Person,97,41,42.27,9
+2024,September,Kidnapping/Abduction,2,2,100,9
+2024,September,Rape,4,NA,NA,9
+2024,September,Sodomy,1,NA,NA,9
+2024,September,Sexual Assault With An Object,1,NA,NA,9
+2024,September,Statutory Rape,1,NA,NA,9
+2024,September,Aggravated Assault,13,7,53.85,9
+2024,September,Simple Assault,67,27,40.3,9
+2024,September,Intimidation,8,5,62.5,9
+2024,September,Crimes Against Property,181,21,11.6,9
+2024,September,Arson,1,NA,NA,9
+2024,September,Burglary/Breaking & Entering,18,3,16.67,9
+2024,September,Counterfeiting/Forgery,2,NA,NA,9
+2024,September,Destruction/Damage/Vandalism of Property,38,8,21.05,9
+2024,September,Embezzlement,3,2,66.67,9
+2024,September,Extortion/Blackmail,1,NA,NA,9
+2024,September,False Pretenses/Swindle/Confidence Game,5,NA,NA,9
+2024,September,Credit Card/Automated Teller Machine Fraud,4,NA,NA,9
+2024,September,Identity Theft,1,NA,NA,9
+2024,September,Robbery,1,NA,NA,9
+2024,September,Shoplifting,14,1,7.14,9
+2024,September,Theft From Building,6,NA,NA,9
+2024,September,Theft From Motor Vehicle,39,NA,NA,9
+2024,September,Theft of Motor Vehicle Parts/Accessories,5,NA,NA,9
+2024,September,All Other Larceny,16,2,12.5,9
+2024,September,Motor Vehicle Theft,27,5,18.52,9
+2024,September,Crimes Against Society,28,18,64.29,9
+2024,September,Drug/Narcotic Violations,8,6,75,9
+2024,September,Drug Equipment Violations,5,4,80,9
+2024,September,Pornography/Obscene Material,3,NA,NA,9
+2024,September,Weapon Law Violations,11,7,63.64,9
+2024,September,Animal Cruelty,1,1,100,9
