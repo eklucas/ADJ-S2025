@@ -1,0 +1,138 @@
+---
+title: "Columbia Payroll"
+output:
+  html_document:
+    df_print: paged
+---
+
+```{r message=F}
+library(tidyverse)
+```
+
+```{r}
+payroll <- read_csv("data/como-payroll-2024.csv")
+```
+
+Get to know the data:
+
+How many rows? 38,883\
+What is one row? One paycheck\
+What is in every column?
+
+-   name (first and last)
+-   department (actually supervisor's title)
+-   job title
+-   check number
+-   check date
+-   total pay (the other pay columns combined)
+-   base, overtime, other, employer-paid (other pay categories)
+
+What are the date boundaries of the data? (the city's fiscal year for 2024, Oct through Sept)
+
+```{r}
+range(payroll$check_date)
+```
+
+Questions about the data:
+
+-   What is other pay? (a reporting question)
+
+-   How to identify individual departments?
+
+```{r}
+payroll %>% count(department)
+# since this is not a true department, it would take a lot of work to create a clean department column. 
+
+# instead you can look for a particular department. for example, find all "department" values that have "police" or "pd":
+
+# just police
+payroll %>% 
+  filter(grepl("police", department, ignore.case=T))
+
+# police OR pd
+payroll %>% 
+  filter(grepl("police|pd", department, ignore.case=T))
+
+# create a new table with just police:
+police <- payroll %>% 
+  filter(grepl("police|pd", department, ignore.case=T))
+```
+
+Questions for the data:
+
+1\. Which job title gets paid the most non base pay? Which job title gets paid the most overtime?
+
+```{r}
+payroll %>% 
+  group_by(job_title) %>% 
+  summarise(non_base_pay = sum(overtime_pay+other_pay+employer_paid_benefits)) %>% 
+  arrange(desc(non_base_pay))
+# keep in mind that these aren't necessarily fair comparisons because we don't know how many people have each job title: the more employees, the higher the number is likely to be. 
+
+# we could calculate mean(), but that is per paycheck, not per person, and so is not ideal: 
+payroll %>% 
+  group_by(job_title) %>% 
+  summarise(non_base_pay = mean(overtime_pay+other_pay+employer_paid_benefits)) %>% 
+  arrange(desc(non_base_pay))
+
+```
+
+It's better to create a dataset of people so that you can more accurately count people and find meaningful averages, medians etc.
+
+```{r}
+people <- payroll %>% 
+# group by the variables that are consistent across paychecks
+  group_by(last_name, first_name, department, job_title) %>% 
+# summarise the variables that are specific to each paycheck (we can ignore check num and date)
+  summarise(total_pay = sum(total_pay), 
+            base_pay = sum(base_pay), 
+            overtime_pay = sum(overtime_pay), 
+            other_pay = sum(other_pay), 
+            employer_paid_benefits = sum(employer_paid_benefits))
+
+# always good to check for NAs in numbers columns because that will affect totals:
+payroll %>% 
+  filter(is.na(overtime_pay))
+# no NAs
+
+# now calculate average non base pay for people in each job title:
+people %>% 
+  group_by(job_title) %>% 
+  summarise(non_base_pay = mean(overtime_pay+other_pay+employer_paid_benefits),
+            employees = n()) %>% 
+  arrange(desc(non_base_pay))
+```
+
+2.  How much is the city paying out in pensions every year?
+
+```{r}
+# how can we identify pension payments? Perhaps by using department, but would need to vet this with someone at the city. 
+people %>% 
+  filter(grepl("pension", department, ignore.case=T)) %>% 
+  summarise(total = sum(total_pay))
+
+# Note that we can't aggregate over the groups we created in the `people` variable unless we use ungroup():
+people %>% 
+  filter(grepl("pension", department, ignore.case=T)) %>% 
+  ungroup() %>% 
+  summarise(total = sum(total_pay))
+```
+
+3.  Which individual got paid the most?
+
+```{r}
+people %>% arrange(desc(total_pay))
+```
+
+4.  How many people are in different job titles? (though we really want to know about departments)
+
+```{r}
+people %>% 
+  group_by(job_title) %>% 
+  summarise(employees = n()) %>% 
+  arrange(desc(employees))
+```
+
+5.  Which job title / department has the highest average salary?
+
+6.  Who gets paid the least?
