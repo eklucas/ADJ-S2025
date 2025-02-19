@@ -1,0 +1,98 @@
+---
+title: "Hot 100 in class"
+output: 
+---
+
+This dataset is based off of Billboard's weekly Hot 100 songs:
+<https://www.billboard.com/charts/hot-100/>
+
+It is compiled by Christian McDonald out of UT-Austin:
+<https://github.com/utdata/rwd-billboard-data>
+
+```{r message=F}
+library(tidyverse)
+```
+
+```{r}
+hot100 <- read_csv("data/hot-100-current.csv")
+```
+
+Do some assessment on the data. How many rows? What is one row? What's
+in every column?
+
+Rows: 347,300
+
+One row: *one song* on the charts for *one week*.
+
+**chart_week**: the week the chart was released (100 songs for each
+week)
+
+**current_week**: the ranking of that particular song for the chart_week
+
+**title**: the title of the song
+
+**performer**: who performs the song
+
+**last_week**: the ranking of this particular song on last week's chart
+(could be 0 or NA if it wasn't on the charts the week before)
+
+**peak_pos**: the highest ranking that song has achieved as of
+chart_week
+
+**wks_on_chart**: how many weeks that song has been on the charts as of
+chart_week.
+
+ASSESSMENT 
+```{r}
+# What are the time boundaries of this data? 
+hot100 %>% reframe(range(chart_week))
+
+# How many weeks are in the data? 3,473 (or the total # of rows divided by 100)
+hot100 %>% count(chart_week)
+
+# You can also use distinct() to see unique values in any column: 
+hot100 %>% distinct(chart_week)
+```
+
+distinct() is a tidyverse function so you can pipe data directly into it. It will give you a list of the unique values (if you specify a column) or a list of unique rows.
+
+```{r}
+# How many years are represented? Use the year() function to pull the year from the date:
+hot100 %>% count(year(chart_week))
+
+# using distinct():
+hot100 %>% distinct(year(chart_week))
+
+# you can also use distinct() with empty () to see unique rows (a good way to check for exact duplicates)
+hot100 %>% distinct()
+
+# further assessment: check to see if the values in current_week match what we expect (1 to 100):
+hot100 %>% distinct(current_week)
+
+# to look at performer, try sorting alphabetically:
+hot100 %>% distinct(performer) %>% arrange(performer)
+
+# since your results are limited to 1000 rows in the console below the code chunk, to see the full list you can create a new variable:
+artists <- hot100 %>% distinct(performer) %>% arrange(performer)
+
+view(artists)
+```
+
+n_distinct() is a base R summary function and therefore must be used inside summarise(). It will give you a count of unique values in a column. 
+
+```{r}
+# example: how many unique performers are there? 
+hot100 %>% summarise(performers = n_distinct(performer))
+
+# how many unique song titles are there for each performer? 
+hot100 %>% 
+  group_by(performer) %>% 
+  summarise(unique_titles = n_distinct(title)) %>% 
+  arrange(desc(unique_titles))
+
+# note that some songs are rereleased with slightly different titles:
+hot100 %>% 
+  filter(performer == "Taylor Swift") %>% 
+  distinct(title) %>% 
+  arrange(title)
+```

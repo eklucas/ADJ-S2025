@@ -9,6 +9,7 @@ Each class period I will commit the code that we work through.
 -    Jan 29: [Introduction to sorting, filtering, and summarizing](https://eklucas.github.io/ADJ-S2025/scripts/intro-to-tidyverse.html)
 -    Feb 5: [Sorting and filtering review](https://eklucas.github.io/ADJ-S2025/scripts/sorting-filtering-review.html)
 -    Feb 12: [Grouping with Columbia payroll](https://eklucas.github.io/ADJ-S2025/scripts/como-payroll-in-class.html)
+-    Feb 19: [Hot 100 in class](https://eklucas.github.io/ADJ-S2025/scripts/hot-100-in-class.html)
 
 Because GitHub is not meant to hold large data files, you will find the data files we use in class on Canvas. 
 
