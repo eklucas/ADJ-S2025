@@ -1,0 +1,97 @@
+---
+title: "Introduction to joins (using FEC campaign finance)"
+output:
+  html_document:
+    df_print: paged
+---
+
+```{r message=F}
+library(tidyverse)
+```
+
+Load two tables from the [FEC Campaign Finance data](https://www.fec.gov/data/browse-data/?tab=bulk-data).
+
+-   `transactions.csv` is a subset of data from "Contributions from committees to candidates & independent expenditures" table.
+
+-   `committees.csv` is the "Committee master file".
+
+```{r}
+transactions <- read_csv("data/transactions.csv")
+committees <- read_csv("data/committees.csv")
+```
+
+`transactions` has a lot of information about individual expenses (in this table, independent expenditures) that are reported by particular committees. Those committees are identified in the `cmte_id` column; that's the only information we have about them. To find out a committee's name, location, affilitions, etc, you need to look in the `committees` file.
+
+`committees` has one row for each PAC (political action committee) registered with the FEC; it includes the same `cmte_id` along with committee name (`cmte_nm`), location, and affiliated organizations or candidates.
+
+Note that the tables share one column of information: `cmte_id`. They happen to be named the same thing which isn't necessary; but they do have to contain the exact same information (in the exact same format) for the join to work.
+
+Start with some simple questions...
+
+**Which committee reported spending the most money?**
+
+```{r}
+transactions %>% 
+  group_by(cmte_id) %>% 
+  summarise(total_amt = sum(transaction_amt)) %>% 
+  arrange(desc(total_amt))
+
+# Committee "C00816991" spent almost $8M, but who are they? 
+
+committees %>% 
+  filter(cmte_id == "C00816991")
+
+# SHOW ME VALUES PAC. 
+```
+
+Rather than do individual lookups, a join brings the information from the two tables together.
+
+**LEFT JOIN**
+`left_join(x, y, by = "")`
+This join keeps every row from table x and produces only matches from table y. Not every committee in the committee master file had independent expenditures; we don't care about committees that aren't relevant to our `transactions` table, so the left join is appropriate here. 
+```{r}
+left_join(transactions, committees, by = "cmte_id")
+# note that the results have the same number of rows as the `transactions` table, but columns from both tables.
+
+transactions %>% 
+  left_join(committees, by = "cmte_id")
+# you can also write the join this way; tables that are "piped" into a function take the place of the first argument (in this case, table x). 
+```
+
+**INNER JOIN**
+`inner_join(x, y, by = "")`
+This join keeps only matches from both tables; the order of table x and table y don't matter. In this case, we would lose any rows in `transactions` if there was no match in `committees`, which *could* be a problem. Note the row count again, it should match the `transactions` table: 
+```{r}
+transactions %>% 
+  inner_join(committees, by = "cmte_id")
+# note that the results are the same as the left_join
+
+committees %>% 
+  inner_join(transactions, by = "cmte_id")
+# the order doesn't matter, except it changes the order of the columns (in this result, the columns from `committees` are first)
+```
+
+**Now to answer the question: which committee spent the most money?**
+```{r}
+transactions %>% 
+  left_join(committees, by = "cmte_id") %>% 
+  group_by(cmte_nm) %>% 
+  summarise(total = sum(transaction_amt)) %>% 
+  arrange(desc(total))
+# after the join we can group_by the name of the committee rather than the ID
+
+transactions %>% 
+  group_by(cmte_id) %>% 
+  summarise(total_amt = sum(transaction_amt)) %>% 
+  arrange(desc(total_amt)) %>% 
+  left_join(committees, by = "cmte_id")
+# note that joins don't have to come at the beginning; you can use filtered or group results as your table x.
+```
+
+
+**Transforming dates stored as characters**
+The `transaction_dt` column is formatted as mmddyyyy and stored as a character column. To sort it, pull out years or months, or work with it as a date, it needs to be stored as a date column. Functions from the lubridate package can do this; in this case we'll use the function `mdy()` because that mimics the order the date is currently stored in: 
+```{r}
+transactions <- transactions %>% 
+  mutate(new_date = mdy(transaction_dt))
+```
