@@ -11,6 +11,7 @@ Each class period I will commit the code that we work through.
 -    Feb 12: [Grouping with Columbia payroll](https://eklucas.github.io/ADJ-S2025/scripts/como-payroll-in-class.html)
 -    Feb 19: [Hot 100 in class](https://eklucas.github.io/ADJ-S2025/scripts/hot-100-in-class.html)
 -    Feb 26: [FEC joins in class](https://eklucas.github.io/ADJ-S2025/scripts/fec-joins-in-class.html)
+-    Mar 12: [Importing](https://eklucas.github.io/ADJ-S2025/scripts/importing-in-class.html)
 
 Because GitHub is not meant to hold large data files, you will find the data files we use in class on Canvas. 
 

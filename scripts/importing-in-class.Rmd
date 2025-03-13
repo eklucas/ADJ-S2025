@@ -1,0 +1,102 @@
+---
+title: "Importing"
+output:
+  html_document:
+    df_print: paged
+---
+As a reminder, always add your packages at the top of your script. We'll use the `readxl` package to import an .xlsx file, `googlesheets4` to import a google spreadsheet, and `janitor` to clean up some column names.
+
+```{r message=F}
+library(tidyverse)
+library(readxl)
+library(googlesheets4)
+library(janitor)
+
+#install.packages("readxl")
+#install.packages(c("readxl","googlesheets4"))
+```
+
+Before we import data, let's explore the options associated with `read_csv()` by looking at the docs. 
+```{r}
+?read_csv
+```
+Note that there are a group of functions that show up, including read_tsv and read_delim. These are functions you can use for files with different formatting: tsv imports a tab-delimited file, and read_delim allows you to specify another delimiter.
+
+You can also include optional arguments to:
+
+-   specify column names (if your file doesn't have them) `col_names = c("name1", "name2", "name3")`
+-   specify data types for each column `col_types = "nnnnnccccc"` (five numeric columns followed by five character columns)
+-   import everything as character `col_types = cols(.default = "c")`
+-   skip rows if your file has extra header rows `skip = 2`
+
+To illustrate some of these options, we'll use a file from the Columbia, MO city website on vendor payments:
+```{r}
+read_csv("data/ledger-data-all-years.csv")
+```
+
+Note that this file has a header row, although some of the names aren't very tidy (two have a space, and one has an odd character, a `#`. R will allow these to be column names but you need to put them between ` marks for R to recognize them as such).
+
+```{r}
+#use the `col_names` argument to say that this file does not have a header row
+read_csv("data/ledger-data-all-years.csv", col_names=FALSE)
+
+#use `col_names` to specify a new set of column names and skip the existing header row:
+read_csv("data/ledger-data-all-years.csv", 
+         col_names = c("col1", "col2", "col3", "col4", "col5", "col6"), 
+         skip=1)
+```
+
+Let's talk data types: read_csv() guesses data types well, but you can always enforce different ones. Use `col_types` to specify one character type for each column. See the documentation for the different data types:
+
+-   c = character
+-   i = integer
+-   n = number
+-   d = double
+-   l = logical
+-   f = factor
+-   D = date
+-   T = date time
+-   t = time
+-   ? = guess
+-   \_ or - = skip
+
+```{r}
+# make sure the fifth column comes in as "date time":
+read_csv("data/ledger-data-all-years.csv", 
+         col_types = "????T?")
+
+# another way to do that
+read_csv("data/ledger-data-all-years.csv", 
+         col_types = cols(`Check Date` = "T"))
+```
+
+Alternately, I could import everthing as character. Sometimes this is the easiest way to import really dirty data, and then you can clean things up and convert columns to dates and numbers as you see fit: 
+```{r}
+read_csv("data/ledger-data-all-years.csv", col_types = cols(.default = "c"))
+```
+
+To clean up the names (i.e. remove spaces and weird characters), use `clean_names()` from the `janitor` package:
+```{r}
+ledger <- read_csv("data/ledger-data-all-years.csv") %>% clean_names()
+```
+
+You can also read csv files directly from the internet, provided you can access the actual file (on github, you need to access the "raw" version of a csv):
+```{r}
+disney <- read_csv("https://raw.githubusercontent.com/ireapps/nicar25-intro-to-R/refs/heads/main/data/disney_movies_total_gross.csv")
+```
+
+
+Importing Excel files is relatively straightforward, and primarily we use the function `read_excel()` to import .xlsx or .xls files. This function has very similar arguments to `read_csv()`, and you can use the col_names and col_types arguments in the same way. With `read_excel()`, you can also specify what sheet in an excel workbook you want to import. In our example, `Current-Detainees-of-Boone-County-Jail.xlsx`, there is only one sheet, so we don't need to specify that argument: 
+```{r}
+read_excel("data/Current-Detainees-of-Boone-County-Jail.xlsx") %>% clean_names()
+```
+
+To import a google sheets file, you need to authenticate your google account. 
+First, find the "ss id" of your google sheet; it's the long string of characters and numbers in the URL:
+```{r}
+read_sheet("1u7vgKwoTqP2bT_pVFUyYZWEMpXQM7Fz3b_5GlnublgA")
+```
+
+Try running that code, and in the console R will ask you to authenticate your google account. It will take you to the browser and ask for permissions, which you can grant. The `read_sheet()` function has most of the same arguments as `read_excel()` or `read_csv()`. 
+
+Note that you can import many different types of files to R, using several different packages. These are just the most commonly used by journalists. You just have to find the right function and the right package for what you need. Check out the `foreign` package, for example, which is great at helping you import large survey files of various types. 
