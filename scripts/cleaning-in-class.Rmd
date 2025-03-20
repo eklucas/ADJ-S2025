@@ -1,0 +1,198 @@
+---
+title: "Data cleaning"
+output:
+  html_document:
+    df_print: paged
+---
+
+```{r message=F}
+library(tidyverse)
+library(readxl)
+library(googlesheets4)
+library(janitor)
+```
+
+```{r}
+disney <- read_csv("https://raw.githubusercontent.com/ireapps/nicar25-intro-to-R/refs/heads/main/data/disney_movies_total_gross.csv")
+
+osha <- read_csv("data/osha.csv")
+
+poverty <- read_csv("data/poverty_original.csv")
+```
+
+#### Converting dates and numbers
+
+Start with the `disney` file. There are a bunch of issues with the formatting in this dataset: the dates are imported as text because they're written out, and the `total_gross` and `inflation_adjusted_gross` are both appearing as numbers because they were imported with dollar signs and commas.\
+To start, let's deal with dates. The beauty of the `lubridate` package (included in `tidyverse`) is a variety of functions that can convert even the most difficult date values. You just have to match the pattern of the date. Try it here on the `release_date` column, which has month (written out), day, year:
+```{r}
+# the lubridate function is mdy()
+# test:
+disney %>% 
+  mutate(new_date = mdy(release_date)) %>% 
+  select(new_date, release_date)
+
+# make it permanent:
+disney <- disney %>% 
+  mutate(new_date = mdy(release_date), .after = release_date)
+```
+
+Now to the numbers columns: `total_gross` and `inflation_adjusted_gross`. There's a function in `tidyverse` that comes from the `readr` package called `parse_number()` that will do all the work for you. See it in action:
+```{r}
+# test it out:
+disney %>% 
+  mutate(new_gross = parse_number(total_gross)) %>% 
+  select(new_gross, total_gross)
+
+# make it permanent. Include the adjusted column as well:
+disney <- 
+  disney %>% 
+  mutate(new_gross = parse_number(total_gross), 
+         new_adjusted = parse_number(inflation_adjusted_gross))
+```
+
+What is the highest grossing Disney movie of all time? (inflation-adjusted)
+```{r}
+disney %>% 
+  arrange(desc(new_adjusted))
+```
+
+Which genre has brought in the most money? 
+```{r}
+# we could look at total, or average (though total doesn't take into account how many movies were made in each genre):
+disney %>% 
+  group_by(genre) %>% 
+  summarise(total = sum(new_adjusted),
+            avg = mean(new_adjusted)) %>% 
+  arrange(desc(avg))
+```
+
+### Adding description columns
+Next we'll take a look at `osha`. 
+
+If you look through the [documentation](https://www.osha.gov/sites/default/files/ITA_Data_Dictionary.pdf) for this dataset, you'll notice that some of these fields are coded, such as `size` and `establishment_type`. For columns that have many value options, we might want to join to a lookup table. But for just a few values, we can add a `_desc` column into our data and code in values based on the original column. 
+
+```{r}
+osha %>% 
+  count(establishment_type)
+
+# values are 1, 2, 3 and NA.
+```
+
+
+We'll add an `estab_type_desc` column based on the values in `establishment_type`, using a function called `case_when()`. This is something like an `if` or `ifelse` statement:
+```{r}
+# test it out:
+osha %>% mutate(estab_type_desc = case_when(
+  establishment_type == 1 ~ "Not a government entity",
+  establishment_type == 2 ~ "State government entity",
+  establishment_type == 3 ~ "Local government entity",
+  .default = "Unknown"
+)) %>% 
+  count(establishment_type, estab_type_desc)
+
+# make it permanent (be sure to delete the count() function)
+osha <- osha %>% mutate(estab_type_desc = case_when(
+  establishment_type == 1 ~ "Not a government entity",
+  establishment_type == 2 ~ "State government entity",
+  establishment_type == 3 ~ "Local government entity",
+  .default = "Unknown"
+))
+```
+
+### Working with strings
+For this exercise, we'll use `poverty_original`, which is an original file that I got from the Census Bureau through tidycensus: all files come from tidycensus have this format. I usually clean them up using several techniques that I'll share here. 
+
+First, let's do some string manipulation. There are many many things you can do to manipulate strings with the `stringr` package (included in `tidyverse`). [See the cheat sheet](https://github.com/ireapps/R-for-data-analysis-2022/blob/main/docs/strings.pdf).
+
+I'll highlight a few. 
+First, take a look at the `GEOID` column. This is a FIPS code column, standard in Census datasets, but it's a universal numbering system that identifies different geographies. The first two numbers of this FIPS code is the state FIPS, and the last three are the county FIPS. You can use these to easily join tables with other data that includes FIPS, without having to worry about whether the states and counties are spelled or represented exactly the same way. 
+
+Start by pulling out the first two numbers for the state FIPS, using the `str_sub()` function, which is one function you can use to subset strings:
+```{r}
+?str_sub
+
+# arguments: (string to parse, start position, stop position)
+# note that str_sub can only accept a vector, so it has to go inside another tidyverse function, such as mutate. Or we can test it on a column in a table by using the base R `$`:
+str_sub(poverty$GEOID, 1, 2)
+
+# now try it using mutate():
+poverty %>% mutate(st_id = str_sub(GEOID, 1, 2), .after = GEOID)
+
+# make it permanent:
+poverty <- poverty %>% mutate(st_id = str_sub(GEOID, 1, 2), .after = GEOID)
+```
+
+Now try it out on the county FIPS:
+```{r}
+# test it out:
+poverty %>% mutate(cnty_id = str_sub(GEOID,3,5), .after=GEOID)
+
+# make it permanent:
+poverty <- poverty %>% mutate(cnty_id = str_sub(GEOID,3,5), .after=GEOID)
+
+```
+
+Great. One last string to manipulate here, and that is the `NAME` column. Separating out county and state names makes it easier to work with. The function we'll use here is `separate_wider_delim()`. Unlike `str_sub()` which works based on position, this function works based on delimiter:
+
+```{r}
+?separate_wider_delim
+
+# note that this function can take a table, so we can pipe directly into it.
+```
+
+Note that you can identify a separator with the `delim =` argument; you can decide whether to remove the original column with the `cols_remove = ` argument (the default is TRUE). 
+```{r}
+# test it out:
+poverty %>% separate_wider_delim(NAME, ", ", names=c("county", "state"), cols_remove = F)
+
+# make it permanent
+poverty <- poverty %>% separate_wider_delim(NAME, ", ", names=c("county", "state"), cols_remove = F)
+```
+There are many useful functions in the package `stringr` (part of `tidyverse`). Here are a few more examples: 
+```{r}
+?str_to_upper
+?str_to_lower
+?str_to_sentence
+?str_replace
+?str_remove
+
+# for example, you can remove the " County" from every county name (though keep in mind there are also Parishes and Boroughs):
+poverty %>% mutate(county = str_remove(county, " County"))
+```
+
+### Reshaping data
+There's one last thing to do to the `poverty` table. In this example, each variable (i.e. `below50`, `below125`, etc) is its own row. To make it easier to do calculations by county, I transposed this data so that each variable would be its own column rather than row. I did that using `pivot_wider()` (for the sake of this example, I'm going to exclude the margin of error, or `moe`). 
+
+```{r}
+poverty %>% 
+  select(-moe) %>% 
+  pivot_wider(names_from = "variable", values_from = "estimate")
+
+
+# for this kind of transformation, I would create a new variable: 
+poverty_wide <- poverty %>% 
+  select(-moe) %>% 
+  pivot_wider(names_from = "variable", values_from = "estimate")
+```
+
+This kind of transformation makes it a lot easier to do calculations within counties (because all the information is on one line). 
+
+Which county has the highest percent of people living below 50% of the poverty line? 
+```{r}
+poverty_wide %>% 
+  mutate(pct = below50/population) %>%  
+  arrange(desc(pct))
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
