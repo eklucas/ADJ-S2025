@@ -1,0 +1,81 @@
+---
+title: "web scraping in class"
+output:
+---
+
+The package that imports and parses HTML is `rvest`: <https://rvest.tidyverse.org/>. When you installed tidyverse it came with rvest, though you have to load it separately in your environment:
+
+```{r message=F}
+library(tidyverse)
+library(rvest)
+```
+
+There are four basic steps to scraping information from a webpage's HTML:
+
+1.  Identify the URL
+2.  Read the HTML from that page
+3.  Parse the HTML by identifying specific elements that have your data
+4.  Turn those elements into a data table
+
+This can be simple or complicated, depending on the website. Use the developer tools (Inspect) to explore the website; you can't really explore the HTML once you've read it into your R environment.
+
+**Step 1: identify the URL**\
+We'll start with a simple scrape on the Maryland state government website; an obvious table that is stored in an HTML "table" tag:
+
+```{r}
+url <- "https://www.dllr.state.md.us/employment/warn.shtml"
+```
+
+**Step 2: Read the HTML from that page**\
+Use the `read_html()` function to grab all the HTML from that particular URL. Remember that even though R brings it all into your environment, it won't look like all the HTML. It will just say "List of 2".
+
+```{r}
+html <- read_html(url)
+```
+
+**Step 3: Identify the HTML element(s) that have your data**\
+Having used Inspect, we know that our data is stored in a "table" tag which is probably the easiest format for scraping data in R. Use
+
+```{r}
+html %>% html_element("table")
+```
+
+**Step 4: Parse the HTML into a table.**\
+This is quite easy if your data is stored in a `table` tag, using the `html_table()` function:
+```{r}
+html %>% html_element("table") %>% html_table()
+```
+
+Note that it's not recognizing the first row as a header row, because it isn't coded into the HTML. That's OK, you can explicitly say that your data has a header row:
+```{r}
+html %>% html_element("table") %>% html_table(header=TRUE)
+```
+
+Now save it into a variable:
+```{r}
+table <- html %>% html_element("table") %>% html_table(header=TRUE)
+```
+
+
+**Next: iterate over the different years**
+
+At the bottom of the page there's a bar that says "Work Adjustment and Retraining Notifications (WARN)"; click on it and you'll see links to prior years of data. They are formatted the same way; click on one and notice that the URL changes slightly to reflect earlier years, e.g. 2023 data is at "https://www.dllr.state.md.us/employment/warn2023.shtml". We can use this to iterate over the years in a `for` loop:
+```{r}
+# first, create a vector of all the years you want to scrape 
+# remember we're doing this because the year is in the URL
+years <- 2010:2022
+
+# then create an empty container to hold our final data table:
+data <- NULL
+
+# this for loop iterates over every value in the `years` vector and follows the steps inside the loop: create a url, read the html, parse the html, save the table, add it to the final file. The loop will run through once for every item in the `years` vector. The Sys.sleep() at the end is a courtesy (and way of avoiding detection): it waits 1 second between each scrape.
+for (year in years) {
+  url <- paste0("https://www.dllr.state.md.us/employment/warn",year,".shtml")
+  html <- read_html(url)
+  table <- html %>% html_element("table") %>% html_table(header=T) %>% 
+    mutate(across(everything(), as.character))
+  data <- bind_rows(data, table)
+  Sys.sleep(1)
+}
+
+```
