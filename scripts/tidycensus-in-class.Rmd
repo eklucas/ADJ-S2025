@@ -1,0 +1,136 @@
+---
+title: "tidycensus in class"
+output:
+  html_document:
+    df_print: paged
+  pdf_document: default
+editor_options:
+  chunk_output_type: inline
+---
+
+### Preparation
+
+Make sure you have an [activated API key from the census](https://api.census.gov/data/key_signup.html). Install the `usethis` package (`install.packages("usethis")`) and then run `usethis::edit_r_environ()` in the console below. This will open up a system file called `.REnviron`. In it, type this line: CENSUS_API_KEY= Then paste your API key, that long string of letters and numbers in your email from the Census Bureau. You do not need to use quotes. For example: CENSUS_API_KEY=a2392kf12oifo12n3kj (That's not a real key). Save and close the .REnviron file Restart R by going to Session \> Restart R
+
+```{r message=F}
+library(tidyverse)
+library(tidycensus)
+```
+
+### Documentation
+
+Here's the [documentation for tidycensus](https://walker-data.com/tidycensus/articles/basic-usage.html#geography-in-tidycensus-1)
+
+Kyle Walker's documentation is good, it's worth consulting frequently. In particular check out:
+
+-   [Basic usage](https://walker-data.com/tidycensus/articles/basic-usage.html)
+
+-   [Margins of error](https://walker-data.com/tidycensus/articles/margins-of-error.html)
+
+### Basic usage for decennial census
+
+In the basic usage section Kyle has some example code near the top to pull median age by state from the 2020 decennial census, using the function `get_decennial()`:
+
+```{r}
+age20 <- get_decennial(geography = "state", 
+                       variables = "P13_001N", 
+                       year = 2020,
+                       sumfile = "dhc")
+
+```
+
+Note the arguments for the `get_decennial()` function:
+
+-   geography: what geography do you want the results aggregated by? This would give us numbers by state; we could also ask for numbers for the US as a whole by writing `geography = "us"`. Or get the numbers by county: `geography = "county"`.
+-   variables: what topics / values are we interested in? "P13_001N" is actually median age. (Below you'll learn how to find variables)
+-   year: the decennial census is conducted every 10 years, so 2020 is the most recent census.
+-   sumfile: this is particular to the decennial census, it's referencing the "Demographic and Housing Characteristics summary file".
+
+### Basic usage for the American Community Survey
+
+If you scroll down near the bottom of the page to the header that says "Working with the ACS", Kyle also has some example code for the get_acs() function:
+
+```{r}
+###LIZ: note that here Kyle changes the name of the variable in the table to "medincome" so we know what "B19013_001" actually is: median household income
+
+vt <- get_acs(geography = "county", 
+              variables = c(medincome = "B19013_001"), 
+              state = "VT", 
+              year = 2021)
+
+###LIZ: what we actually want to look at is Missouri, though, not Vermont, and let's use the most recent year: 
+
+mo <- get_acs(geography = "county", 
+              variables = c(medincome = "B19013_001"), 
+              state = "MO", 
+              year = 2023)
+```
+
+
+### Finding variables for "detailed" tables (IDs that start with `B`)
+
+To get data, you need to name the variables that you want from the Census data. In order to know what those variables are, it's helpful to reference a table of all variables for the Census's "Detailed Tables" (these are tables with IDs that usually start with B):
+
+```{r}
+v23 <- load_variables(2023, "acs5", cache = TRUE)
+
+head(v23)
+```
+
+In this table `V23` the `name` column is the variable name and `label` describes the variable. `concept` is the table name and `geography` is the smallest available geography. See more about [geographies in the Basic Usage section](https://walker-data.com/tidycensus/articles/basic-usage.html#geography-in-tidycensus) of the documentation.
+
+On data.census.gov we looked at the table "B25049" that gives information about households with complete and incomplete plumbing facilities. We can use the `grepl()` function to find all variables with that table id:
+
+```{r}
+v23 %>% filter(grepl("B25049", name))
+```
+
+Consider that you could also search for keywords in the `label` column, such as the word plumbing
+
+```{r}
+v23 %>% filter(grepl("plumbing", label, ignore.case=T))
+
+# There are a bunch of tables that mention plumbing, so you might have to dig around to find the one that is what you want. For example, some of the other tables break down plumbing facilities in ways we don't care about.
+
+# The variables we want from the B25049 table are B25049_001, B25049_004 and B25049_007. To look at Columbia, we'll use the "place" geography:
+get_acs(geography = "place", 
+              variables = c(households = "B25049_001", 
+                            owner_occupied_lacking = "B25049_004",
+                            renter_occupied_lacking = "B25049_007"), 
+              state = "MO", 
+              year = 2023)
+```
+
+That got us the estimates; keep an eye on the margins of error (moe). If the moe is less than 1% of the estimate (`moe/estimate <= .01`), no problem. If it's between 1% and 10%, be cautious. If it's greater than 10%, the estimate is probably unreliable.
+
+### Finding variables for "subject" tables (IDs that start with `S`)
+
+```{r}
+# add the suffix "/subject" to the second argument of the load_variables() function:
+S23 <- load_variables(2023, "acs5/subject", cache = TRUE)
+```
+
+Now that you've got all the subject table variables, use `filter()` and `grepl()` again to find all the variables in that table:
+
+```{r}
+internet <- S23 %>% filter(grepl("S2801_", name))
+```
+
+Search that table for the estimate of households without an internet connection: "S2801_C01_019". Remember that the first variable will usually be our denominator. (Keep in mind we are also looking at households here: There are three main units of measurement in the Census: people, households and families. You can look up the specific definitions (and differences) between households and families on your own.)
+
+Now, what pct of Columbia households don't have an internet subscription?
+
+```{r}
+no_internet <- get_acs(geography = "place", 
+              variables = c(none = "S2801_C01_019", total = "S2801_C01_001"), 
+              state = "MO", 
+              year = 2023)
+
+no_internet %>% 
+  pivot_wider(names_from = "variable", values_from = c("estimate","moe")) %>% 
+  filter(estimate_total >= 5000) %>% 
+  mutate(none_pct = estimate_none/estimate_total) %>% 
+  arrange(desc(none_pct ))
+
+# beware that the moe for Columbia is more than 10% of the estimate!
+```
