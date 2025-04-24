@@ -1,0 +1,122 @@
+---
+title: "National Weather Service API"
+output:
+  html_document:
+    df_print: paged
+---
+
+The packages we'll need include `httr2` which makes HTTP requests (of APIs), and `jsonlite` which reformats json into more manageable objects (such as tibbles)
+
+```{r message=F}
+library(tidyverse)
+library(httr2)
+library(jsonlite)
+```
+
+APIs are all a little different, but they operate under some basic principles.
+
+-   you make "calls" to specific endpoints; these often look like URLs. Each endpoint gets you specific information (which may or may not include tabular data).
+-   sometimes those calls include `headers`, such as 'User-Agent'; some APIs require that you have an "api key" that is unique to you, which you must first request. This key is often included in the headers.
+-   sometimes the calls include query parameters, which usually come after a question mark `?` in the URL.
+
+The documentation for the API should tell you what you need to do. Let's take a look at the API from the National Weather Service: [https://www.weather.gov/documentation/services-web-api#/default/](https://www.weather.gov/documentation/services-web-api#/default/)
+
+On the "Overview" tab, the documentation says "A User Agent is required to identify your application" and "This string can be anything." It gives the example: "User-Agent: (myweatherapp.com, contact@myweatherapp.com)". Then it lists the formats you can request information in. For our purposes, we'll use "Accept: application/geo+json". 
+
+On the "Examples" tab, the documentation says that the forecast requires that the endpoint contain the office and the grid (x and y) of the location; in order to get this information, you need to use a separate endpoint that takes latitude and longitude. To get the forecast, we'll need two steps: 
+
+### STEP ONE: get the endpoint for our particular forecast
+
+```{r}
+# You can get our latitude and longtidue by right-clicking anywhere in Columbia in Google Maps:
+
+#latitude = 38.94987
+#longitude = -92.32999
+
+# so our endpoint (according to the example) should be: 
+endpoint <- "https://api.weather.gov/points/38.94987,-92.32999"
+```
+
+The process for making a request is this: 
+1.  find the endpoint
+2.  create the request using the function `request()`. Optionally, use `req_headers()` to create headers such as 'User-Agent' and 'Accept'
+3.  send the request using the function `req_perform()`.
+
+```{r}
+# we have the endpoint, so create the request
+req <- request(endpoint) %>% 
+  req_headers(`User-Agent` = "my personal weather app",
+               Accept = "application/geo+json")
+
+# perform the request:
+resp <- req_perform(req)
+```
+
+In the response, we get a lot of information; it includes some information about our request, and the status of the request (hopefully "200" which means "OK"), and then there's the body of the response. We want to take this, which is usually formatted as JSON (JavaScript Object Notation), and pull out the one thing we need: the office and grid information to get our forecast. 
+```{r}
+# the resp_body_string() function pulls out the body of the response, and fromJSON() parses the json. The latter function is from the jsonlite package: 
+parsed_json <- resp_body_string(resp) %>% fromJSON()
+```
+
+JSON is nested and hierarchical; to find the element we want, we have to dive into the response json. You can do this in RStudio, but you can also plug the endpoint - https://api.weather.gov/points/38.94987,-92.32999 - into your browser and take a look. What we want is in a JSON item called "forecast", which is nested under "properties." We can get to it and pull it out either by name or by position: 
+```{r}
+# "properties" is the fifth item in parsed_json; "forecast" is the eighth item in properties, so this is how we would pull it out by position: 
+parsed_json[[5]][[8]]
+
+# or we can pull it out by name, using the $: 
+parsed_json$properties$forecast
+
+# either way, we want to save the result into a new variable: 
+forecast_endpoint <- parsed_json$properties$forecast
+```
+
+### STEP TWO: Get the actual forecast
+
+Repeat the process with the new `forecast_endpoint`:
+
+```{r}
+# create the request using the endpoint
+req_forecast <- request(forecast_endpoint) %>% 
+  req_headers(`User-Agent` = "my personal weather app",
+               Accept = "application/geo+json")
+
+# perform the request
+resp_forecast <- req_perform(req_forecast)
+
+# parse the body of the request
+parsed_json2 <- resp_body_string(resp_forecast) %>% fromJSON()
+
+# this time the actual forecast is stored as a data.frame; it's in an item called "periods" inside an item called "properties":
+parsed_json2$properties$periods
+
+# great! turn it into a tibble and save it as a new variable:
+today_forecast <- parsed_json2$properties$periods %>% as_tibble()
+```
+
+Let's create a function to do this for any lat and long. To create a function, use the `function()` function; inside the parentheses, create your required arguments (and any optional arguments you want). We'll have lat and long be required, but user_agent can be optional (you can change it but don't have to). Then in the curly brackets, put the steps you want the function to take when given its input. Basically, just repeat the steps above: 
+```{r}
+nws_coords <- function(lat, long, user_agent = "my personal weather app") {
+  endpoint1 <- paste0("https://api.weather.gov/points/",lat,",",long)
+  req1 <- request(endpoint1) %>% 
+    req_headers(`User-Agent` = user_agent,
+               Accept = "application/geo+json")
+  resp1 <- req_perform(req1)
+  json1 <- resp_body_string(resp1) %>% fromJSON()
+  endpoint2 <- json1$properties$forecast
+  req2 <- request(endpoint2) %>% 
+    req_headers(`User-Agent` = user_agent,
+              Accept = "application/geo+json")
+  resp2 <- req_perform(req2)
+  json2 <- resp_body_string(resp2) %>% fromJSON()
+  forecast_data <- json2$properties$periods %>% as_tibble()
+  
+# as a last step we'll just print the table, but you could also pull the narrative forecast, or have it spit out any part of the table:
+  print(forecast_data)
+}
+```
+
+Now try out using your new function in a different set of coordinates: 
+```{r}
+nws_coords(lat = "38.638", long = "-90.229")
+```
+

@@ -15,6 +15,7 @@ Each class period I will commit the code that we work through.
 -    Mar 19: [Cleaning](https://eklucas.github.io/ADJ-S2025/scripts/cleaning-in-class.html)
 -    April 2: [Web scraping 101](https://eklucas.github.io/ADJ-S2025/scripts/web-scrape-in-class.html)
 -    April 16: [Intro to tidycensus](https://eklucas.github.io/ADJ-S2025/scripts/tidycensus-in-class.html)
+-    April 24: [API calls with httr2](https://eklucas.github.io/ADJ-S2025/scripts/httr2-in-class.html)
 
 Because GitHub is not meant to hold large data files, you will find the data files we use in class on Canvas. 
 
