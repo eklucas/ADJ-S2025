@@ -5,9 +5,7 @@
 prep-material/
 
 # student assignments
-assignments/turned-in/
-assignments/project-data/
-assignments/project1
+assignments/
 
 # History files
 .Rhistory
